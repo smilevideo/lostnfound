@@ -1,0 +1,1 @@
+This folder contains the files for scraping the song data from cyphergate and the resulting json song data. Uses axios and cheerio on Node.js.

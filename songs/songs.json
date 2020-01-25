@@ -1,0 +1,17 @@
+[
+    {
+        "title": "testSong1",
+        "artist": "testArtist1",
+        "bpm": 100
+    },
+    {
+        "title": "testSong2",
+        "artist": "testArtist1",
+        "bpm": 150
+    },
+    {
+        "title": "testSong3",
+        "artist": "testArtist2",
+        "bpm": 200
+    }
+]
