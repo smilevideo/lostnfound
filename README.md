@@ -2,7 +2,7 @@
 A speed modifier calculator for DJMax Respect V.  
 [Lost n' found](temp.temp)  
 
-Input a target bpm and mode and find your ideal speed mod for every song.
+Select a target bpm and mode and find your ideal speed mod for every song.
 
 ## Modes
 - <strong>Nearest:</strong> The closest multiple to your target bpm  
@@ -14,15 +14,22 @@ Input a target bpm and mode and find your ideal speed mod for every song.
 - <strong>Lower Limit:</strong> The smallest multiple that is greater than your target bpm  
 (smallest positive difference)
 
----
-
 ## Notes
-Variable BPM tracks - the data uses the maximum bpm for the calculation:
+For songs with variable BPM, the app uses the maximum bpm in calculations. Those songs are listed below:
 - Fentanest: 20~160
 - KILLER BEE: 116~155
-- Electronic Boutique: 125~145
+- Negative Nature: 125~145
 - Royal Clown: 143~164
 
-### Development Notes
+---
+
+## Development Notes
 Built with Next.js/React  
-Song information manually input with [this Node script]('./songs/inputSongs.js') (yeah.. because song lists I saw elsewhere either didn't have BPMs or didn't have full parity with Respect V)
+
+Song information was manually input with [this Node script]('./songs/inputSongs.js') because song lists I saw elsewhere either didn't have BPMs or didn't have full parity with Respect V. If anyone knows how to get this info directly from the game files that would be cool...
+
+Testing with Jest:
+```
+npm install
+npm run test
+```
