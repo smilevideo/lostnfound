@@ -2,7 +2,6 @@ const fs = require('fs');
 const readline = require('readline')
 const os = require('os');
 
-const log = console.log;
 const endOfLine = os.EOL;
 
 let songs = JSON.parse(fs.readFileSync('./songs.json'));
@@ -15,7 +14,7 @@ const rl = readline.createInterface({
 const addSong = () => {
     const song = {};
 
-    rl.question(`Enter 'y' to add a song. Enter anything else to quit.${endOfLine}`, response => {
+    rl.question(`Enter 'y' to add a song. Enter anything else to save and quit.${endOfLine}`, response => {
         if (response === 'y') {
             rl.question(`Enter song title:${endOfLine}`, response => {
                 song.title = response;

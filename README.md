@@ -1,8 +1,8 @@
-# Lost n'found
-A speed modifier calculator for DJMax Respect/V.  
-[lost n'found](temp.temp)  
+# Lost n' found
+A speed modifier calculator for DJMax Respect V.  
+[Lost n' found](temp.temp)  
 
-Input a target bpm and mode and find an ideal speed mod for every song.
+Input a target bpm and mode and find your ideal speed mod for every song.
 
 ## Modes
 - <strong>Nearest:</strong> The closest multiple to your target bpm  
@@ -16,6 +16,13 @@ Input a target bpm and mode and find an ideal speed mod for every song.
 
 ---
 
-## Development Notes
+## Notes
+Variable BPM tracks - the data uses the maximum bpm for the calculation:
+- Fentanest: 20~160
+- KILLER BEE: 116~155
+- Electronic Boutique: 125~145
+- Royal Clown: 143~164
+
+### Development Notes
 Built with Next.js/React  
-Song information scraped from [cyphergate](http://cyphergate.net/index.php?title=DJMAX_RESPECT:Tracklist)
+Song information manually input with [this Node script]('./songs/inputSongs.js') (yeah.. because song lists I saw elsewhere either didn't have BPMs or didn't have full parity with Respect V)

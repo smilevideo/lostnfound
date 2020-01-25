@@ -1,27 +1,822 @@
 [
   {
-    "title": "test",
-    "artist": "testartisttttt",
-    "BPM": 500
+    "title": "2Nite",
+    "artist": "ND Lee",
+    "BPM": 110
   },
   {
-    "title": "testSong1",
-    "artist": "testArtist1",
-    "bpm": 100
+    "title": "A Lie",
+    "artist": "makou",
+    "BPM": 100
   },
   {
-    "title": "testSong2",
-    "artist": "testArtist1",
-    "bpm": 150
+    "title": "A. I",
+    "artist": "Forte Escape",
+    "BPM": 138
   },
   {
-    "title": "testSong3",
-    "artist": "testArtist2",
-    "bpm": 200
+    "title": "Alone",
+    "artist": "marshmello",
+    "BPM": 142
   },
   {
-    "title": "zdsfkzdosf",
-    "artist": "a",
-    "BPM": 500
+    "title": "Always",
+    "artist": "YUGI/Mool",
+    "BPM": 135
+  },
+  {
+    "title": "Another DAY",
+    "artist": "Forte Escape",
+    "BPM": 142
+  },
+  {
+    "title": "Armored Phantom",
+    "artist": "ned",
+    "BPM": 151
+  },
+  {
+    "title": "Ask to Wind",
+    "artist": "Forte Escape",
+    "BPM": 108
+  },
+  {
+    "title": "Ask to Wind ~Live Mix~",
+    "artist": "Forte Escape",
+    "BPM": 210
+  },
+  {
+    "title": "Astro Fight",
+    "artist": "Forte Escape",
+    "BPM": 183
+  },
+  {
+    "title": "Beautiful Day",
+    "artist": "ND Lee",
+    "BPM": 83
+  },
+  {
+    "title": "Beyond Yourself",
+    "artist": "Mycin.T",
+    "BPM": 90
+  },
+  {
+    "title": "Binary World",
+    "artist": "Tsukasa",
+    "BPM": 182
+  },
+  {
+    "title": "BlackCat",
+    "artist": "BEXTER",
+    "BPM": 130
+  },
+  {
+    "title": "Bleed",
+    "artist": "Axol & The Tech Thieves",
+    "BPM": 145
+  },
+  {
+    "title": "BlythE",
+    "artist": "M2U",
+    "BPM": 180
+  },
+  {
+    "title": "Boom!",
+    "artist": "BEXTER",
+    "BPM": 175
+  },
+  {
+    "title": "Brain Storm",
+    "artist": "Croove",
+    "BPM": 172
+  },
+  {
+    "title": "Brandnew Days",
+    "artist": "Planetboom",
+    "BPM": 124
+  },
+  {
+    "title": "Brave it Out",
+    "artist": "BEXTER",
+    "BPM": 124
+  },
+  {
+    "title": "Bright Dream",
+    "artist": "M2U",
+    "BPM": 130
+  },
+  {
+    "title": "Bullet, Wanted!",
+    "artist": "Mycin.T",
+    "BPM": 150
+  },
+  {
+    "title": "Bye Bye Love",
+    "artist": "3rd Coast",
+    "BPM": 120
+  },
+  {
+    "title": "Can We Talk",
+    "artist": "Forte Escape",
+    "BPM": 125
+  },
+  {
+    "title": "Catch Me",
+    "artist": "Forte Escape",
+    "BPM": 145
+  },
+  {
+    "title": "Chain of Gravity",
+    "artist": "Tsukasa",
+    "BPM": 155
+  },
+  {
+    "title": "Cherokee",
+    "artist": "xxdbxx",
+    "BPM": 136
+  },
+  {
+    "title": "Child of Night",
+    "artist": "GOTH",
+    "BPM": 130
+  },
+  {
+    "title": "Chrono Breakers",
+    "artist": "NieN",
+    "BPM": 178
+  },
+  {
+    "title": "CnP",
+    "artist": "CrooFE",
+    "BPM": 127
+  },
+  {
+    "title": "DIVINE SERVICE",
+    "artist": "Electronic Boutique",
+    "BPM": 151
+  },
+  {
+    "title": "Don't Die",
+    "artist": "Paul Bazooka",
+    "BPM": 175
+  },
+  {
+    "title": "Dreadnought",
+    "artist": "EarBreaker",
+    "BPM": 140
+  },
+  {
+    "title": "Dream of You",
+    "artist": "makou",
+    "BPM": 192
+  },
+  {
+    "title": "Elastic STAR",
+    "artist": "Forte Escape",
+    "BPM": 132
+  },
+  {
+    "title": "End of the Moonlight",
+    "artist": "Forte Escape",
+    "BPM": 155
+  },
+  {
+    "title": "Enemy Storm",
+    "artist": "Croove",
+    "BPM": 133
+  },
+  {
+    "title": "Enter The Universe",
+    "artist": "GOTH",
+    "BPM": 162
+  },
+  {
+    "title": "Eternal Memory",
+    "artist": "M2U",
+    "BPM": 125
+  },
+  {
+    "title": "Every Morning",
+    "artist": "ND Lee",
+    "BPM": 150
+  },
+  {
+    "title": "Extreme Z4",
+    "artist": "Forte Escape",
+    "BPM": 152
+  },
+  {
+    "title": "Fallen Angel",
+    "artist": "DJ Mocha",
+    "BPM": 142
+  },
+  {
+    "title": "Far East Princess",
+    "artist": "Nauts",
+    "BPM": 102
+  },
+  {
+    "title": "FEAR",
+    "artist": "Supbaby",
+    "BPM": 182
+  },
+  {
+    "title": "Fentanest",
+    "artist": "EarBreaker/Eszett",
+    "BPM": 160
+  },
+  {
+    "title": "Fever GJ",
+    "artist": "xxdbxx",
+    "BPM": 98
+  },
+  {
+    "title": "Fly Away",
+    "artist": "XeoN",
+    "BPM": 140
+  },
+  {
+    "title": "For Seasons",
+    "artist": "makou",
+    "BPM": 116
+  },
+  {
+    "title": "For the IKARUS",
+    "artist": "NieN",
+    "BPM": 154
+  },
+  {
+    "title": "FTR",
+    "artist": "Supbaby",
+    "BPM": 140
+  },
+  {
+    "title": "Funky Chups",
+    "artist": "Forte Escape",
+    "BPM": 127
+  },
+  {
+    "title": "Futurism",
+    "artist": "Forte Escape",
+    "BPM": 142
+  },
+  {
+    "title": "Get Jinxed",
+    "artist": "Riot Games",
+    "BPM": 180
+  },
+  {
+    "title": "Get on Top",
+    "artist": "Planetboom",
+    "BPM": 125
+  },
+  {
+    "title": "GET OUT",
+    "artist": "ND Lee",
+    "BPM": 112
+  },
+  {
+    "title": "Ghost Voices",
+    "artist": "Virtual Self",
+    "BPM": 120
+  },
+  {
+    "title": "glory day",
+    "artist": "BEXTER/Mycin.T",
+    "BPM": 162
+  },
+  {
+    "title": "Good Bye",
+    "artist": "Ruby Tuesday",
+    "BPM": 136
+  },
+  {
+    "title": "Groovin Up",
+    "artist": "Mycin.T",
+    "BPM": 120
+  },
+  {
+    "title": "HAMSIN",
+    "artist": "makou",
+    "BPM": 150
+  },
+  {
+    "title": "HeartBeat",
+    "artist": "ND Lee",
+    "BPM": 155
+  },
+  {
+    "title": "Heavenly",
+    "artist": "makou",
+    "BPM": 125
+  },
+  {
+    "title": "Hello Pinky",
+    "artist": "NieN",
+    "BPM": 141
+  },
+  {
+    "title": "Higher",
+    "artist": "Supbaby",
+    "BPM": 137
+  },
+  {
+    "title": "JBG",
+    "artist": "Croove",
+    "BPM": 102
+  },
+  {
+    "title": "Jupiter Driving",
+    "artist": "xxdbxx",
+    "BPM": 144
+  },
+  {
+    "title": "KILLER BEE",
+    "artist": "GOTH",
+    "BPM": 155
+  },
+  {
+    "title": "Kingdom",
+    "artist": "Phantom Sage",
+    "BPM": 120
+  },
+  {
+    "title": "KUDA",
+    "artist": "Gonzo",
+    "BPM": 126
+  },
+  {
+    "title": "Kung Brother",
+    "artist": "Paul Bazooka",
+    "BPM": 145
+  },
+  {
+    "title": "Ladymade Star",
+    "artist": "ESTi",
+    "BPM": 136
+  },
+  {
+    "title": "Lemonade",
+    "artist": "M2U",
+    "BPM": 195
+  },
+  {
+    "title": "Let's Go Baby",
+    "artist": "3rd Coast",
+    "BPM": 108
+  },
+  {
+    "title": "Liar",
+    "artist": "zts",
+    "BPM": 140
+  },
+  {
+    "title": "Lift You Up",
+    "artist": "makou",
+    "BPM": 88
+  },
+  {
+    "title": "Light House",
+    "artist": "xxdbxx",
+    "BPM": 162
+  },
+  {
+    "title": "Long Vacation",
+    "artist": "ESTi",
+    "BPM": 138
+  },
+  {
+    "title": "Lost n' found",
+    "artist": "bermei.inazawa",
+    "BPM": 165
+  },
+  {
+    "title": "Luv Flow",
+    "artist": "3rd Coast",
+    "BPM": 115
+  },
+  {
+    "title": "MASAI",
+    "artist": "Croove",
+    "BPM": 128
+  },
+  {
+    "title": "Memoirs",
+    "artist": "M2U",
+    "BPM": 140
+  },
+  {
+    "title": "Memory of Beach",
+    "artist": "M2U",
+    "BPM": 130
+  },
+  {
+    "title": "Mess it Up",
+    "artist": "Nauts",
+    "BPM": 140
+  },
+  {
+    "title": "Midnight Blood",
+    "artist": "NieN",
+    "BPM": 147
+  },
+  {
+    "title": "Miles",
+    "artist": "Electronic Boutique",
+    "BPM": 130
+  },
+  {
+    "title": "Minimal Life",
+    "artist": "EarBreaker",
+    "BPM": 145
+  },
+  {
+    "title": "Minus 3",
+    "artist": "Croove",
+    "BPM": 147
+  },
+  {
+    "title": "Mulch",
+    "artist": "Sampling Masters MEGA",
+    "BPM": 200
+  },
+  {
+    "title": "My Alias",
+    "artist": "Dayz",
+    "BPM": 110
+  },
+  {
+    "title": "NANO RISK",
+    "artist": "Dayz",
+    "BPM": 176
+  },
+  {
+    "title": "NB POWER",
+    "artist": "NieN",
+    "BPM": 185
+  },
+  {
+    "title": "NB RANGER",
+    "artist": "M2U",
+    "BPM": 140
+  },
+  {
+    "title": "NB RANGER - Virgin Force",
+    "artist": "NieN",
+    "BPM": 198
+  },
+  {
+    "title": "NB Rangers -Returns-",
+    "artist": "NieN",
+    "BPM": 145
+  },
+  {
+    "title": "Negative Nature",
+    "artist": "Electronic Boutique",
+    "BPM": 145
+  },
+  {
+    "title": "NEON 1989 (ESTi Remix)",
+    "artist": "OREO",
+    "BPM": 120
+  },
+  {
+    "title": "Never Say",
+    "artist": "ND Lee",
+    "BPM": 90
+  },
+  {
+    "title": "Nightmare",
+    "artist": "M2U",
+    "BPM": 190
+  },
+  {
+    "title": "OBLIVION",
+    "artist": "ESTi",
+    "BPM": 141
+  },
+  {
+    "title": "OBLIVION ~Rockin' Night Style~",
+    "artist": "NieN",
+    "BPM": 141
+  },
+  {
+    "title": "ON",
+    "artist": "ND Lee",
+    "BPM": 144
+  },
+  {
+    "title": "One the Love",
+    "artist": "xxdbxx",
+    "BPM": 125
+  },
+  {
+    "title": "Only for you",
+    "artist": "NieN",
+    "BPM": 122
+  },
+  {
+    "title": "OPEN FIRE",
+    "artist": "JC",
+    "BPM": 140
+  },
+  {
+    "title": "Out Law",
+    "artist": "Croove",
+    "BPM": 126
+  },
+  {
+    "title": "Over Your Dream",
+    "artist": "xxdbxx",
+    "BPM": 174
+  },
+  {
+    "title": "Para-Q",
+    "artist": "Forte Escape",
+    "BPM": 160
+  },
+  {
+    "title": "Phantom Of Sky",
+    "artist": "M2U",
+    "BPM": 115
+  },
+  {
+    "title": "Piano Concerto No.1",
+    "artist": "Wav Factory",
+    "BPM": 156
+  },
+  {
+    "title": "plastic method",
+    "artist": "zts",
+    "BPM": 118
+  },
+  {
+    "title": "POP/STARS",
+    "artist": "K/DA",
+    "BPM": 170
+  },
+  {
+    "title": "quixotic",
+    "artist": "bermei.inazawa",
+    "BPM": 174
+  },
+  {
+    "title": "Ray of Illuminati",
+    "artist": "ESTi",
+    "BPM": 150
+  },
+  {
+    "title": "RED",
+    "artist": "Croove",
+    "BPM": 107
+  },
+  {
+    "title": "Remains Of Doom",
+    "artist": "NieN",
+    "BPM": 124
+  },
+  {
+    "title": "REVENGE",
+    "artist": "ND Lee",
+    "BPM": 120
+  },
+  {
+    "title": "Right Now",
+    "artist": "makou",
+    "BPM": 90
+  },
+  {
+    "title": "Road Of Death",
+    "artist": "NieN",
+    "BPM": 180
+  },
+  {
+    "title": "Rock Or Die",
+    "artist": "NieN",
+    "BPM": 106
+  },
+  {
+    "title": "Rocka-a-doodle-doo",
+    "artist": "makou",
+    "BPM": 135
+  },
+  {
+    "title": "Rolling On the Duck",
+    "artist": "NieN",
+    "BPM": 180
+  },
+  {
+    "title": "Royal Clown",
+    "artist": "bermei.inazawa",
+    "BPM": 164
+  },
+  {
+    "title": "Runaway",
+    "artist": "LeeZu",
+    "BPM": 140
+  },
+  {
+    "title": "Running girl",
+    "artist": "Mycin.T",
+    "BPM": 170
+  },
+  {
+    "title": "Ruti'n (GOTH Wild Electro Remix)",
+    "artist": "GOTH",
+    "BPM": 112
+  },
+  {
+    "title": "Sad Machine",
+    "artist": "Porter Robinson",
+    "BPM": 177
+  },
+  {
+    "title": "Save My Dream",
+    "artist": "Forte Escape",
+    "BPM": 125
+  },
+  {
+    "title": "Secret Dejavu",
+    "artist": "DINY",
+    "BPM": 160
+  },
+  {
+    "title": "Seeker",
+    "artist": "M2U",
+    "BPM": 150
+  },
+  {
+    "title": "Shadow Flower",
+    "artist": "ned",
+    "BPM": 142
+  },
+  {
+    "title": "Showtime",
+    "artist": "Ruby Tuesday",
+    "BPM": 138
+  },
+  {
+    "title": "SIN",
+    "artist": "ESTi",
+    "BPM": 190
+  },
+  {
+    "title": "SIN ~The Last Scene~",
+    "artist": "ESTi",
+    "BPM": 200
+  },
+  {
+    "title": "Smoky Quartz",
+    "artist": "makou",
+    "BPM": 104
+  },
+  {
+    "title": "So Happy",
+    "artist": "Raven & Kreyn",
+    "BPM": 126
+  },
+  {
+    "title": "sO mUCH iN LUV",
+    "artist": "3rd Coast",
+    "BPM": 130
+  },
+  {
+    "title": "Soar ~Stay With Me~",
+    "artist": "Mycin.T",
+    "BPM": 142
+  },
+  {
+    "title": "SQUEEZE",
+    "artist": "Oriental ST8",
+    "BPM": 147
+  },
+  {
+    "title": "STALKER",
+    "artist": "ND Lee",
+    "BPM": 112
+  },
+  {
+    "title": "StarFish",
+    "artist": "PlanetBoom",
+    "BPM": 150
+  },
+  {
+    "title": "Stay with me",
+    "artist": "Ruby Tuesday",
+    "BPM": 140
+  },
+  {
+    "title": "Sunny Side",
+    "artist": "Croove",
+    "BPM": 112
+  },
+  {
+    "title": "Sunny Side ~Deepn' Soul Mix~",
+    "artist": "makou",
+    "BPM": 122
+  },
+  {
+    "title": "Sunset Rider",
+    "artist": "Nauts",
+    "BPM": 170
+  },
+  {
+    "title": "Syriana",
+    "artist": "Bexter",
+    "BPM": 135
+  },
+  {
+    "title": "Taekwonburi",
+    "artist": "xxdbxx",
+    "BPM": 162
+  },
+  {
+    "title": "Temptation",
+    "artist": "S-TRO",
+    "BPM": 136
+  },
+  {
+    "title": "The Feelings",
+    "artist": "Supbaby",
+    "BPM": 130
+  },
+  {
+    "title": "The Lost Story",
+    "artist": "NEOWIZ Bless Soundteam",
+    "BPM": 70
+  },
+  {
+    "title": "The Obliterator",
+    "artist": "GOTH",
+    "BPM": 186
+  },
+  {
+    "title": "Tok! Tok! Tok!",
+    "artist": "STARTRACK",
+    "BPM": 178
+  },
+  {
+    "title": "Triple Zoe",
+    "artist": "Forte Escape",
+    "BPM": 150
+  },
+  {
+    "title": "U.A.D",
+    "artist": "HAYAKO",
+    "BPM": 129
+  },
+  {
+    "title": "Void",
+    "artist": "Kobayashi Tetsuya",
+    "BPM": 127
+  },
+  {
+    "title": "voldenuit",
+    "artist": "Cuve",
+    "BPM": 105
+  },
+  {
+    "title": "waiting for me",
+    "artist": "Croove",
+    "BPM": 150
+  },
+  {
+    "title": "Waiting for you",
+    "artist": "Mycin.T",
+    "BPM": 175
+  },
+  {
+    "title": "We're All Gonna Die",
+    "artist": "Paul Bazooka",
+    "BPM": 180
+  },
+  {
+    "title": "WhiteBlue",
+    "artist": "zts",
+    "BPM": 144
+  },
+  {
+    "title": "WHY",
+    "artist": "Nauts",
+    "BPM": 84
+  },
+  {
+    "title": "Ya! Party!",
+    "artist": "Forte Escape",
+    "BPM": 194
+  },
+  {
+    "title": "Yellowberry -AJ Mix-",
+    "artist": "Forte Escape",
+    "BPM": 151
+  },
+  {
+    "title": "Yo Creo Que Si",
+    "artist": "makou",
+    "BPM": 135
+  },
+  {
+    "title": "Your Own Miracle",
+    "artist": "Ruby Tuesday",
+    "BPM": 136
   }
 ]
