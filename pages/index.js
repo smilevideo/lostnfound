@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
-import Head from 'next/head'
+import DocHead from '../components/docHead';
 import Nav from '../components/nav'
+
+import { useState } from 'react'
 import Link from 'next/link';
 
 const ResultsLink = props => (
@@ -10,23 +11,18 @@ const ResultsLink = props => (
 )
 
 const Home = () => {
-  const [targetBPM, setTargetBPM] = useState(null);
-  const [mode, setMode] = useState(null);
+  const [targetBPM, setTargetBPM] = useState(100);
+  const [mode, setMode] = useState('nearest');
 
   return (
     <div>
-      <Head>
-        <title>Lost n' found</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
+      <DocHead />
       <Nav />
 
-      <h1 className="title">Welcome to Lost n' found.</h1>
+      <h1 className="title">Lost n' found</h1>
+      <h3 className='title-desc'>A speed modifier calculator for DJMax Respect V</h3>
 
       <ResultsLink targetBPM={targetBPM} mode={mode}/>
-
-      
 
     </div>
   )

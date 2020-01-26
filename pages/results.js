@@ -1,15 +1,24 @@
-import { useRouter } from 'next/router';
-import Head from 'next/head'
+import DocHead from '../components/docHead';
 import Nav from '../components/nav';
+
+import { useRouter } from 'next/router';
 import useSWR from 'swr';
 
 const fetcher = (url) => {
     return fetch(url).then(r => r.json());
-  };
+};
+
+const calcSpeedmod = (targetBPM, mode, songBPM) => {
+    // speed mods go from 0.5 to 5.0, in increments of 0.25
+
+
+}
 
 const Results = (props) => {
-    const router = useRouter();
+    const { query } = useRouter();
 
+    const targetBPM = query.targetBPM ? query.targetBPM : 100;
+    const mode = query.mode ? query.mode : 'nearest';
 
     const { data, error } = useSWR('./api/songs', fetcher);
     if (data) console.log(data);
@@ -20,15 +29,17 @@ const Results = (props) => {
 
     return (
         <div>
-            <Head>
-                <title>Lost n' found</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
+            <DocHead />
             <Nav />
 
             {/* fetch status - won't show if successful */}
             <div className='status'>{status}</div>
+
+            <div>
+                <p>Selected BPM: {targetBPM}</p>
+                <p>Selected Mode: {mode}</p>
+            </div>
+
             {data && <ul>
                 {data.map(song => (
                     <li key={song.title}>
@@ -38,6 +49,7 @@ const Results = (props) => {
                     </li>
                 ))}
             </ul>}
+
         </div>
     )
 }
