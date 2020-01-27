@@ -14,36 +14,43 @@ const Home = () => {
   const [targetBPM, setTargetBPM] = useState(100);
   const [mode, setMode] = useState('nearest');
 
+  const modeSelectStyle = (optionMode) => ({
+    height: '150px', 
+    width: '150px', 
+    border: optionMode === mode ? '10px solid' : '1px solid'
+  })
+
   return (
     <div>
       <DocHead />
       <Nav />
 
-      <h1 className="title">Lost n' found</h1>
+      <h1 className="title"></h1>
       <h3 className='title-desc'>A speed modifier calculator for DJMax Respect V</h3>
 
-      <p>Selected Mode: {mode}</p>
-
       <div 
         className='modeSelect' 
-        style={{height: '100px', width: '100px', border: '1px solid'}}
+        style={modeSelectStyle('nearest')}
         onClick={() => {setMode('nearest')}}
       >
-        <span>Nearest</span>
+        <div>Nearest</div>
+        <div>Finds the modified BPM closest to your target BPM.</div>
       </div>
       <div 
         className='modeSelect' 
-        style={{height: '100px', width: '100px', border: '1px solid'}}
+        style={modeSelectStyle('upperLimit')}
         onClick={() => {setMode('upperLimit')}}
       >
-        <span>Upper Limit</span>
+        <div>Upper Limit</div>
+        <div>Finds the maximum modified BPM less than your upper limit.</div>
       </div>
       <div 
         className='modeSelect' 
-        style={{height: '100px', width: '100px', border: '1px solid'}}
+        style={modeSelectStyle('lowerLimit')}
         onClick={() => {setMode('lowerLimit')}}
       >
-        <span>Lower Limit</span>
+        <div>Lower Limit</div>
+        <div>Finds the minimum modified BPM greater than your lower limit.</div>
       </div>
       
       <input 

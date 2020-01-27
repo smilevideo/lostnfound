@@ -2,7 +2,7 @@
 A speed modifier calculator for DJMax Respect V.  
 [Lost n' found](temp.temp)  
 
-Select a target bpm and mode and find your ideal speed mod for every song.
+Select a target bpm and calculation mode and find your ideal speed mod for every song.
 
 ## Modes
 - <strong>Nearest:</strong> The closest multiple to your target bpm  
@@ -27,9 +27,3 @@ For songs with variable BPM, the app uses the maximum bpm in calculations. Those
 Built with Next.js/React  
 
 Song information was manually input with [this Node script]('./songs/inputSongs.js') because song lists I saw elsewhere either didn't have BPMs or didn't have full parity with Respect V. If anyone knows how to get this info directly from the game files that would be cool...
-
-Testing with Jest:
-```
-npm install
-npm run test
-```

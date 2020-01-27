@@ -5,7 +5,7 @@ const Nav = () => (
     <ul>
       <li>
         <Link href="/">
-          <a>Home</a>
+          <a>Lost n' found</a>
         </Link>
       </li>
     </ul>
@@ -28,7 +28,7 @@ const Nav = () => (
       a {
         color: #067df7;
         text-decoration: none;
-        font-size: 13px;
+        font-size: 40px;
       }
     `}</style>
   </nav>
