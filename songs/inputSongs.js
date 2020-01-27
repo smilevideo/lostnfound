@@ -28,7 +28,7 @@ const addSong = () => {
                         songs.push(song);
 
                         addSong();
-                    })    
+                    })
                 })
             })
         }

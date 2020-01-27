@@ -54,7 +54,12 @@ const calcSpeedmod = (targetBPM, mode, songBPM) => {
         return speedmodList[end];
     }
     else if (mode === 'lowerLimit') {
-        return speedmodList[end + 1];
+        if (end === speedmodList.length - 1) {
+            return speedmodList[end]; //speedmodList[end + 1] doesn't exist if the targetBPM is greater than the maximum multiple
+        }
+        else {
+            return speedmodList[end + 1];
+        }
     }
 }
 
