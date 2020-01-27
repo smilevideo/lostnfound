@@ -1,6 +1,5 @@
 # Lost n' found
-A speed modifier calculator for DJMax Respect V.  
-[Lost n' found](temp.temp)  
+A speed modifier calculator for DJMax Respect V.    
 
 Select a target bpm and calculation mode and find your ideal speed mod for every song.
 
