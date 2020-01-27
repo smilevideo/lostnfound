@@ -8,20 +8,63 @@ const fetcher = (url) => {
     return fetch(url).then(r => r.json());
 };
 
+// speed mods go from 0.5 to 5.0, in increments of 0.25
+const speedmodList = [];
+for (let i = 0.5; i <= 5; i += 0.25) {
+    speedmodList.push(i);
+}
+
+const modeList = ['nearest', 'upperLimit', 'lowerLimit'];
+
 const calcSpeedmod = (targetBPM, mode, songBPM) => {
-    // speed mods go from 0.5 to 5.0, in increments of 0.25
+    //binary search for the largest speed mod that gives a bpm less than the target BPM
+    let start = 0;
+    let end = speedmodList.length - 1;
 
+    while (start <= end) {
+        let mid = Math.floor((start + end) / 2);
 
+        if (songBPM * speedmodList[mid] > targetBPM) {
+            end = mid - 1;
+        }
+        else if (songBPM * speedmodList[mid] < targetBPM) {
+            start = mid + 1;
+        }
+        else {
+            return speedmodList[mid]; //perfect match applies to all 3 modes
+        }
+    }
+    
+    //after the loop, speedmodList[end] will give the largest speed less than targetBPM
+    if (mode === 'nearest') {
+        const diff = Math.abs(speedmodList[end] - targetBPM);
+        if (Math.abs(speedmodList[end + 1] - targetBPM) < diff) {
+            return speedmodList[end + 1];
+        }
+        else {
+            return speedmodList[end];
+        }
+    }
+    else if (mode === 'upperLimit') {
+        return speedmodList[end];
+    }
+    else if (mode === 'lowerLimit') {
+        return speedmodList[end + 1];
+    }
 }
 
 const Results = (props) => {
     const { query } = useRouter();
 
-    const targetBPM = query.targetBPM ? query.targetBPM : 100;
-    const mode = query.mode ? query.mode : 'nearest';
+    //check if url query bpm is a valid integer string; if not, default to 100
+    const targetBPM = (!isNaN(query.targetBPM) && !isNaN(parseFloat(query.targetBPM)) && Number.isInteger(parseInt(query.targetBPM, 10)))
+        ? query.targetBPM 
+        : 100;
+
+    //check if url query mode is a valid mode; if not, default to nearest
+    const mode = modeList.includes(query.mode) ? query.mode : 'nearest';
 
     const { data, error } = useSWR('./api/songs', fetcher);
-    if (data) console.log(data);
 
     let status = '';
     if (!data) status = 'Loading...';
@@ -45,7 +88,9 @@ const Results = (props) => {
                     <li key={song.title}>
                         <div><strong>{`${song.title}`}</strong></div>
                         <div>{`Artist: ${song.artist}`}</div>
-                        <div>{`BPM: ${song.BPM}`}</div> <br />
+                        <div>{`BPM: ${song.BPM}`}</div> 
+                        <div>{`Speed Mod to use: ${calcSpeedmod(targetBPM, mode, song.BPM)}`}</div> 
+                        <br />
                     </li>
                 ))}
             </ul>}
