@@ -4,7 +4,12 @@ import Nav from '../components/nav';
 import { useRouter } from 'next/router';
 import useSWR from 'swr';
 
-const modeList = ['nearest', 'upperLimit', 'lowerLimit'];
+//map the calc mode strings to their frontend display versions
+const modeList = {
+    nearest: 'Nearest',
+    upperLimit: 'Upper Limit',
+    lowerLimit: 'Lower Limit'
+};
 
 // possible speed mods in Respect V go from 0.5 to 5.0, in increments of 0.25
 const speedmodList = [];
@@ -67,7 +72,8 @@ const Results = (props) => {
         : 100;
 
     //check if mode in url query is a valid mode; if not, default to nearest
-    const mode = modeList.includes(query.mode) ? query.mode : 'nearest';
+    const mode = Object.keys(modeList).includes(query.mode) ? query.mode : 'nearest';
+    let displayMode = modeList[mode];
 
     //fetch song data from api
     const { data, error } = useSWR('./api/songs', url => (
@@ -87,7 +93,7 @@ const Results = (props) => {
 
             <div>
                 <p>Selected BPM: {targetBPM}</p>
-                <p>Selected Mode: {mode}</p>
+                <p>Selected Mode: {displayMode}</p>
             </div>
 
             {data && <ul>
