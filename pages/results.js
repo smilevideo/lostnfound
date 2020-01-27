@@ -61,12 +61,11 @@ const calcSpeedmod = (targetBPM, mode, songBPM) => {
 const Results = (props) => {
     const { query } = useRouter();
 
-    //check if bpm in url query is a valid positive integer string; if not, default to 100
+    //check if bpm in url query is a valid positive number string; if not, default to 100
     const targetBPM = (
         !isNaN(query.targetBPM) 
         && !isNaN(parseFloat(query.targetBPM)) 
-        && Number.isInteger(parseInt(query.targetBPM, 10))
-        && parseInt(query.targetBPM, 10) > 0
+        && parseFloat(query.targetBPM) > 0
         )
         ? query.targetBPM 
         : 100;
