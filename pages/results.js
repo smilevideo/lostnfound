@@ -32,9 +32,13 @@ const calcSpeedmod = (targetBPM, mode, songBPM) => {
     }
     
     //after the loop, speedmodList[end] will give the largest speed less than targetBPM
+    if (end < 0) { 
+        return 0.5; //if the targetBPM is less than the minimum possible speed, return minimum speed 
+    }
+
     if (mode === 'nearest') {
-        const diff = Math.abs(speedmodList[end] - targetBPM);
-        if (Math.abs(speedmodList[end + 1] - targetBPM) < diff) {
+        const diff = Math.abs((speedmodList[end] * songBPM) - targetBPM);
+        if (Math.abs((speedmodList[end + 1] * songBPM) - targetBPM) < diff) {
             return speedmodList[end + 1];
         }
         else {
@@ -52,8 +56,13 @@ const calcSpeedmod = (targetBPM, mode, songBPM) => {
 const Results = (props) => {
     const { query } = useRouter();
 
-    //check if bpm in url query is a valid integer string; if not, default to 100
-    const targetBPM = (!isNaN(query.targetBPM) && !isNaN(parseFloat(query.targetBPM)) && Number.isInteger(parseInt(query.targetBPM, 10)))
+    //check if bpm in url query is a valid positive integer string; if not, default to 100
+    const targetBPM = (
+        !isNaN(query.targetBPM) 
+        && !isNaN(parseFloat(query.targetBPM)) 
+        && Number.isInteger(parseInt(query.targetBPM, 10))
+        && parseInt(query.targetBPM, 10) > 0
+        )
         ? query.targetBPM 
         : 100;
 
