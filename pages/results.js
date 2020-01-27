@@ -4,17 +4,13 @@ import Nav from '../components/nav';
 import { useRouter } from 'next/router';
 import useSWR from 'swr';
 
-const fetcher = (url) => {
-    return fetch(url).then(r => r.json());
-};
+const modeList = ['nearest', 'upperLimit', 'lowerLimit'];
 
-// speed mods go from 0.5 to 5.0, in increments of 0.25
+// possible speed mods in Respect V go from 0.5 to 5.0, in increments of 0.25
 const speedmodList = [];
 for (let i = 0.5; i <= 5; i += 0.25) {
     speedmodList.push(i);
 }
-
-const modeList = ['nearest', 'upperLimit', 'lowerLimit'];
 
 const calcSpeedmod = (targetBPM, mode, songBPM) => {
     //binary search for the largest speed mod that gives a bpm less than the target BPM
@@ -56,16 +52,18 @@ const calcSpeedmod = (targetBPM, mode, songBPM) => {
 const Results = (props) => {
     const { query } = useRouter();
 
-    //check if url query bpm is a valid integer string; if not, default to 100
+    //check if bpm in url query is a valid integer string; if not, default to 100
     const targetBPM = (!isNaN(query.targetBPM) && !isNaN(parseFloat(query.targetBPM)) && Number.isInteger(parseInt(query.targetBPM, 10)))
         ? query.targetBPM 
         : 100;
 
-    //check if url query mode is a valid mode; if not, default to nearest
+    //check if mode in url query is a valid mode; if not, default to nearest
     const mode = modeList.includes(query.mode) ? query.mode : 'nearest';
 
-    const { data, error } = useSWR('./api/songs', fetcher);
-
+    //fetch song data from api
+    const { data, error } = useSWR('./api/songs', url => (
+        fetch(url).then(r => r.json())
+    ));
     let status = '';
     if (!data) status = 'Loading...';
     if (error) status = 'Failed to fetch songs.';
@@ -84,15 +82,21 @@ const Results = (props) => {
             </div>
 
             {data && <ul>
-                {data.map(song => (
-                    <li key={song.title}>
+                {data.map(song => {
+                    const speedMod = calcSpeedmod(targetBPM, mode, song.BPM)
+                    const newBPM = speedMod * song.BPM;
+                    const difference = newBPM - targetBPM;
+
+                    return <li key={song.title}>
                         <div><strong>{`${song.title}`}</strong></div>
                         <div>{`Artist: ${song.artist}`}</div>
                         <div>{`BPM: ${song.BPM}`}</div> 
-                        <div>{`Speed Mod to use: ${calcSpeedmod(targetBPM, mode, song.BPM)}`}</div> 
+                        <div>{`Speed Mod to use: ${speedMod}`}</div> 
+                        <div>{`New BPM: ${newBPM}`}</div>
+                        <div>{`Difference: ${difference}`}</div>
                         <br />
                     </li>
-                ))}
+                })}
             </ul>}
 
         </div>
