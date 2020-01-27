@@ -105,9 +105,10 @@ const Results = (props) => {
                         <div><strong>{`${song.title}`}</strong></div>
                         <div>{`Artist: ${song.artist}`}</div>
                         <div>{`BPM: ${song.BPM}`}</div> 
+                        
                         <div>{`Speed Mod to use: ${speedMod}`}</div> 
                         <div>{`New BPM: ${newBPM}`}</div>
-                        <div>{`Difference: ${difference}`}</div>
+                        <div>{`Difference: ${Math.round(difference * 100) / 100}`}</div>
                         <br />
                     </li>
                 })}
