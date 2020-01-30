@@ -1,9 +1,11 @@
 # Lost n' found
-A speed modifier calculator for DJMax Respect V.    
+A speed modifier calculator for DJMax Respect V. 
 
 Select a target bpm and calculation mode and find your ideal speed mod for every song.
 
-## Modes
+Supports both English and Korean songlists.
+
+## Calculation Modes
 - <strong>Nearest:</strong> The closest multiple to your target bpm  
 (minimizes absolute value of difference)  
 
@@ -13,8 +15,8 @@ Select a target bpm and calculation mode and find your ideal speed mod for every
 - <strong>Lower Limit:</strong> The smallest multiple that is greater than your target bpm  
 (smallest positive difference)
 
-## Notes
-For songs with variable BPM, the app uses the maximum bpm in calculations. Those songs are listed below:
+## Songs with BPM Changes
+For songs with variable BPM, the app uses the maximum bpm in calculations. Those songs and their BPM ranges are listed below:
 - Fentanest: 20~160
 - KILLER BEE: 116~155
 - Negative Nature: 125~145
@@ -25,5 +27,7 @@ For songs with variable BPM, the app uses the maximum bpm in calculations. Those
 ## Development Notes
 Built with Next.js/React  
 
-Song information scraped from [DJMAXDB](https://djmaxdb.com/4B/) with [this Node script](https://github.com/smilevideo/lostnfound/blob/master/songs/inputSongs.js).  
-The (manual input) version is a script for adding songs to the JSON by manual CLI input.
+English song information manually entered with [this Node script]() because the lists I saw elsewhere either didn't have BPMs or didn't have full parity with Respect V.
+
+Korean song information scraped from [DJMAXDB](https://djmaxdb.com/4B/) with [this Node script](https://github.com/smilevideo/lostnfound/blob/master/songs/inputSongs.js).  
+
