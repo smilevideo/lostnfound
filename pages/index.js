@@ -78,6 +78,7 @@ const Index = () => {
   
   const [targetBPM, setTargetBPM] = useState(100);
   const [mode, setMode] = useState('nearest');
+  const [language, setLanguage] = useState('EN');
 
   const modeSelectStyle = (optionMode) => ({
     height: '150px', 
@@ -97,7 +98,7 @@ const Index = () => {
   const displayMode = modeList[mode];
 
   //fetch song data from api
-  const { data, error } = useSWR('./api/songs', url => (
+  const { data, error } = useSWR(`./api/songs${language}`, url => (
       fetch(url).then(r => r.json())
   ));
   let status = '';
@@ -108,9 +109,12 @@ const Index = () => {
     <div>
       <DocHead />
       <Nav />
-
+      
       <h1 className="title"></h1>
       <h3 className='title-desc'>A speed modifier calculator for DJMax Respect V</h3>
+      
+      {/* fetch status - won't show if successful */}
+      <div className='status'>{status}</div>
 
       <div 
         className='modeSelect' 
@@ -144,15 +148,36 @@ const Index = () => {
         onChange={(event) => {setTargetBPM(event.target.value)}}
       />
       <br /><br />
+      
+      <label className='form-radio'>
+          <input
+              type='radio'
+              name='language'
+              value='EN'
+              checked={language === 'EN'}
+              onChange={() => {setLanguage('EN')}}
+              className='form-input-radio'
+          />
+          English
+      </label>
+      <label className='form-radio'>
+          <input
+              type='radio'
+              name='language'
+              value='KR'
+              checked={language === 'KR'}
+              onChange={() => {setLanguage('KR')}}
+              className='form-input-radio'
+          />
+          Korean
+      </label>
 
       <ResultsLink targetBPM={targetBPM} mode={mode}/>
-
-        {/* fetch status - won't show if successful */}
-        <div className='status'>{status}</div>
 
       <div>
           <p>Selected BPM: {targetBPM}</p>
           <p>Selected Mode: {displayMode}</p>
+          <p>Selected Language: {language}</p>
       </div>
 
       {data && <ul>
