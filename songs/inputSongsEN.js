@@ -4,7 +4,7 @@ const os = require('os');
 
 const endOfLine = os.EOL;
 
-let songs = JSON.parse(fs.readFileSync('./songs.json'));
+let songs = JSON.parse(fs.readFileSync('./songsEN.json'));
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -44,7 +44,7 @@ const addSong = () => {
             })
 
             let songsJSON = JSON.stringify(songs, null, 2);
-            fs.writeFileSync('./songs.json', songsJSON)
+            fs.writeFileSync('./songsEN.json', songsJSON)
             rl.close(); 
         }
     })
