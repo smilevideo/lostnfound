@@ -25,4 +25,5 @@ For songs with variable BPM, the app uses the maximum bpm in calculations. Those
 ## Development Notes
 Built with Next.js/React  
 
-Song information was manually input with [this Node script](https://github.com/smilevideo/lostnfound/blob/master/songs/inputSongs.js) because song lists I saw elsewhere either didn't have BPMs or didn't have full parity with Respect V. If anyone knows how to get this info directly from the game files that would be cool...
+Song information scraped from [DJMAXDB](https://djmaxdb.com/4B/) with [this Node script](https://github.com/smilevideo/lostnfound/blob/master/songs/inputSongs.js).  
+The (manual input) version is a script for adding songs to the JSON by manual CLI input.
