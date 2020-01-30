@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Link from 'next/link';
-import { useRouter } from 'next/router';
 import useSWR from 'swr';
 
 import DocHead from '../components/docHead';
@@ -18,14 +17,6 @@ const speedmodList = [];
 for (let i = 0.5; i <= 5; i += 0.25) {
   speedmodList.push(i);
 }
-
-const ResultsLink = props => (
-  <Link href={`/?targetBPM=${props.targetBPM}`}>
-    <a>
-      <button>go</button>
-    </a>
-  </Link>
-)
 
 const calcSpeedmod = (targetBPM, mode, songBPM) => {
   //binary search for the largest speed mod that gives a bpm less than the target BPM
@@ -74,7 +65,6 @@ const calcSpeedmod = (targetBPM, mode, songBPM) => {
 }
 
 const Index = () => {
-  const { query } = useRouter();
   
   const [targetBPM, setTargetBPM] = useState(100);
   const [mode, setMode] = useState('nearest');
@@ -85,15 +75,6 @@ const Index = () => {
     width: '150px', 
     border: optionMode === mode ? '10px solid' : '1px solid'
   })
-
-  //check if bpm in url query is a valid positive number string; if not, default to 100
-  const urlTargetBPM = (
-    !isNaN(query.targetBPM) 
-    && !isNaN(parseFloat(query.targetBPM))
-    && parseFloat(query.targetBPM) > 0
-    )
-    ? query.targetBPM 
-    : 100;
 
   const displayMode = modeList[mode];
 
@@ -172,8 +153,6 @@ const Index = () => {
           Korean
       </label>
 
-      <ResultsLink targetBPM={targetBPM} mode={mode}/>
-
       <div>
           <p>Selected BPM: {targetBPM}</p>
           <p>Selected Mode: {displayMode}</p>
@@ -188,7 +167,6 @@ const Index = () => {
 
               return <li key={song.title}>
                   <div><strong>{`${song.title}`}</strong></div>
-                  <div>{`Artist: ${song.artist}`}</div>
                   <div>{`BPM: ${song.BPM}`}</div> 
                   
                   <div>{`Speed Mod to use: ${speedMod}`}</div> 
