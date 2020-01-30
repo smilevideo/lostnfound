@@ -1,9 +1,7 @@
 import { useState } from 'react'
-import Link from 'next/link';
 import useSWR from 'swr';
 
 import DocHead from '../components/docHead';
-import Nav from '../components/nav'
 
 //map the calc mode strings to their frontend display versions
 const modeList = {
@@ -89,39 +87,24 @@ const Index = () => {
   return (
     <div>
       <DocHead />
-      <Nav />
       
-      <h1 className="title"></h1>
+      <h1 className="title">Lost n' found</h1>
       <h3 className='title-desc'>A speed modifier calculator for DJMax Respect V</h3>
       
       {/* fetch status - won't show if successful */}
       <div className='status'>{status}</div>
 
-      <div 
-        className='modeSelect' 
-        style={modeSelectStyle('nearest')}
-        onClick={() => {setMode('nearest')}}
-      >
-        <div>Nearest</div>
-        <div>Finds the modified BPM closest to your target BPM.</div>
-      </div>
-      <div 
-        className='modeSelect' 
-        style={modeSelectStyle('upperLimit')}
-        onClick={() => {setMode('upperLimit')}}
-      >
-        <div>Upper Limit</div>
-        <div>Finds the maximum modified BPM less than your upper limit.</div>
-      </div>
-      <div 
-        className='modeSelect' 
-        style={modeSelectStyle('lowerLimit')}
-        onClick={() => {setMode('lowerLimit')}}
-      >
-        <div>Lower Limit</div>
-        <div>Finds the minimum modified BPM greater than your lower limit.</div>
-      </div>
-      
+      <label for="mode-select">Calculation Mode:</label>
+
+      <select name="mode" id="mode-select" onChange={(event) => {setMode(event.target.value)}}>
+          <option value='nearest'>Nearest</option>
+          <option value='upperLimit'>Upper Limit</option>
+          <option value='lowerLimit'>Lower Limit</option>
+      </select>
+
+      <br />
+
+      <span>BPM: </span>
       <input 
         type='number'
         min='1'
@@ -153,11 +136,7 @@ const Index = () => {
           Korean
       </label>
 
-      <div>
-          <p>Selected BPM: {targetBPM}</p>
-          <p>Selected Mode: {displayMode}</p>
-          <p>Selected Language: {language}</p>
-      </div>
+      <hr />
 
       {data && <ul>
           {data.map(song => {

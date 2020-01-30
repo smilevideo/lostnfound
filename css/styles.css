@@ -4,3 +4,8 @@ body {
     max-width: 680px;
     margin: 0 auto;
 }
+
+.title {
+    text-decoration: none;
+    font-size: 40px;
+}
