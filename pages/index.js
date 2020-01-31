@@ -151,7 +151,9 @@ const Index = ({ dataEN, dataKR }) => {
           })}
       </ul>
 
+      <a href='https://github.com/smilevideo/lostnfound'><img src='GitHub-Mark-32px.png' id='githubButton' /></a>
     </div>
+    
   )
 }
 
