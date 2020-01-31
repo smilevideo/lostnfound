@@ -73,15 +73,8 @@ const Index = ({ dataEN, dataKR }) => {
       
       <h1 className="title">Lost n' found</h1>
       <h3 className='title-desc'>A speed modifier calculator for DJMax Respect V</h3>
-      
-      <p>{`Target BPM: ${targetBPM}`}</p>
-      <p>{`Mode: ${mode}`}</p>
-      <p>{`Language: ${language}`}</p>
-      <p>{`Selected Song: ${song.title}`}</p>
-      <p>{`Selected Mod: ${songMod}`}</p>
 
       <label htmlFor="mode-select">Calculation Mode:</label>
-
       <select name="mode" id="mode-select" onChange={(event) => {setMode(event.target.value)}}>
         <option value='nearest'>Nearest</option>
         <option value='upperLimit'>Upper Limit</option>
@@ -94,7 +87,6 @@ const Index = ({ dataEN, dataKR }) => {
         {data.map((song, index) => (
           <option key={song.title} value={index}>{`${song.title}`}</option>
         ))}
-
       </select>
 
       <select name="songMod" id="songMod-select" value={songMod} onChange={(event) => {setSongMod(event.target.value)}}>
@@ -107,7 +99,7 @@ const Index = ({ dataEN, dataKR }) => {
 
       <br />
 
-      <span>BPM: </span>
+      <span>Target BPM: </span>
       <input 
         type='number'
         min='1'
@@ -122,7 +114,7 @@ const Index = ({ dataEN, dataKR }) => {
               name='language'
               value='EN'
               checked={language === 'EN'}
-              onChange={() => {setLanguage('EN')}}
+              onChange={(event) => {setLanguage(event.target.value)}}
               className='form-input-radio'
           />
           English
@@ -133,7 +125,7 @@ const Index = ({ dataEN, dataKR }) => {
               name='language'
               value='KR'
               checked={language === 'KR'}
-              onChange={() => {setLanguage('KR')}}
+              onChange={(event) => {setLanguage(event.target.value)}}
               className='form-input-radio'
           />
           Korean

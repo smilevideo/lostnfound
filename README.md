@@ -1,7 +1,7 @@
 # Lost n' found
 A speed modifier calculator for DJMax Respect V. 
 
-Select a target bpm and calculation mode and find your ideal speed mod for every song.
+Select a target bpm either manually or by selecting a song and modifier you were comfortable with. Then select a calculation mode to find your ideal speed mod for every song.
 
 Supports both English and Korean songlists.
 
