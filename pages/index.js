@@ -1,14 +1,7 @@
-import { useState } from 'react'
-import useSWR from 'swr';
+import { useState } from 'react';
+import fetch from 'isomorphic-unfetch';
 
 import DocHead from '../components/docHead';
-
-//map the calc mode strings to their frontend display versions
-const modeList = {
-  nearest: 'Nearest',
-  upperLimit: 'Upper Limit',
-  lowerLimit: 'Lower Limit'
-};
 
 // possible speed mods in Respect V go from 0.5 to 5.0, in increments of 0.25
 const speedmodList = [];
@@ -62,27 +55,16 @@ const calcSpeedmod = (targetBPM, mode, songBPM) => {
   }
 }
 
-const Index = () => {
-  
+const Index = ({ dataEN, dataKR }) => {
   const [targetBPM, setTargetBPM] = useState(100);
   const [mode, setMode] = useState('nearest');
   const [language, setLanguage] = useState('EN');
+  const [song, setSong] = useState(null);
+  const [songMod, setSongMod] = useState(1.0);
 
-  const modeSelectStyle = (optionMode) => ({
-    height: '150px', 
-    width: '150px', 
-    border: optionMode === mode ? '10px solid' : '1px solid'
-  })
-
-  const displayMode = modeList[mode];
-
-  //fetch song data from api
-  const { data, error } = useSWR(`./api/songs${language}`, url => (
-      fetch(url).then(r => r.json())
-  ));
-  let status = '';
-  if (!data) status = 'Loading...';
-  if (error) status = 'Failed to fetch songs.';
+  let data = [];
+  if (language === 'EN') data = dataEN;
+  else if (language === 'KR') data = dataKR;
 
   return (
     <div>
@@ -91,16 +73,37 @@ const Index = () => {
       <h1 className="title">Lost n' found</h1>
       <h3 className='title-desc'>A speed modifier calculator for DJMax Respect V</h3>
       
-      {/* fetch status - won't show if successful */}
-      <div className='status'>{status}</div>
+      <p>{`Target BPM: ${targetBPM}`}</p>
+      <p>{`Mode: ${mode}`}</p>
+      <p>{`Language: ${language}`}</p>
+      <p>{`Selected Song: ${song && song.title}`}</p>
+      <p>{`Selected Mod: ${songMod}`}</p>
 
-      <label for="mode-select">Calculation Mode:</label>
+      <label htmlFor="mode-select">Calculation Mode:</label>
 
       <select name="mode" id="mode-select" onChange={(event) => {setMode(event.target.value)}}>
-          <option value='nearest'>Nearest</option>
-          <option value='upperLimit'>Upper Limit</option>
-          <option value='lowerLimit'>Lower Limit</option>
+        <option value='nearest'>Nearest</option>
+        <option value='upperLimit'>Upper Limit</option>
+        <option value='lowerLimit'>Lower Limit</option>
       </select>
+      
+      <br />
+
+      <select name="song" id="songTitle-select" onChange={(event) => {setSong(data[event.target.value])}}>
+        <option value={null}>-- Select a song --</option>
+        {data && data.map((song, index) => (
+          <option key={song.title} value={index}>{`${song.title} - ${song.BPM}`}</option>
+        ))}
+
+      </select>
+
+      <select name="songMod" id="songMod-select" value={songMod} onChange={(event) => {setSongMod(event.target.value)}}>
+        {speedmodList.map(mod => (
+          <option key={mod} value={mod}>{mod}</option>
+        ))}
+      </select>
+
+      <input type='button' disabled={!song} value='calculate' onClick={() => {setTargetBPM(song.BPM * songMod)}}></input>
 
       <br />
 
@@ -158,6 +161,17 @@ const Index = () => {
 
     </div>
   )
+}
+
+Index.getInitialProps = async ctx => {
+  //kicks off fetch requests simultaneously, effectively running them in parallel
+  const [ resEN, resKR ] = [await fetch('http://localhost:3000/api/songsEN'), await fetch('http://localhost:3000/api/songsKR')];
+  const [ jsonEN, jsonKR ] = [await resEN.json(), await resKR.json()];
+
+  return {
+    dataEN: jsonEN,
+    dataKR: jsonKR
+  }
 }
 
 export default Index
