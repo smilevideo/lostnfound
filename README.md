@@ -24,7 +24,7 @@ For songs with variable BPM, the app uses the maximum bpm in calculations. Those
 
 ---
 
-## Development Notes
+### Development Notes
 Built with Next.js/React  
 
 English song information manually entered with [this Node script](https://github.com/smilevideo/lostnfound/blob/master/songs/inputSongsEN.js) because the lists I saw elsewhere either didn't have BPMs or didn't have full parity with Respect V.
