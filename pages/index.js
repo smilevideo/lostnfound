@@ -56,15 +56,16 @@ const calcSpeedmod = (targetBPM, mode, songBPM) => {
 }
 
 const Index = ({ dataEN, dataKR }) => {
-  const [targetBPM, setTargetBPM] = useState(100);
+  const [targetBPM, setTargetBPM] = useState(110);
   const [mode, setMode] = useState('nearest');
   const [language, setLanguage] = useState('EN');
-  const [song, setSong] = useState(null);
-  const [songMod, setSongMod] = useState(1.0);
-
+  
   let data = [];
   if (language === 'EN') data = dataEN;
   else if (language === 'KR') data = dataKR;
+
+  const [song, setSong] = useState(data[0]);
+  const [songMod, setSongMod] = useState(1.0);
 
   return (
     <div>
@@ -76,7 +77,7 @@ const Index = ({ dataEN, dataKR }) => {
       <p>{`Target BPM: ${targetBPM}`}</p>
       <p>{`Mode: ${mode}`}</p>
       <p>{`Language: ${language}`}</p>
-      <p>{`Selected Song: ${song && song.title}`}</p>
+      <p>{`Selected Song: ${song.title}`}</p>
       <p>{`Selected Mod: ${songMod}`}</p>
 
       <label htmlFor="mode-select">Calculation Mode:</label>
@@ -90,9 +91,8 @@ const Index = ({ dataEN, dataKR }) => {
       <br />
 
       <select name="song" id="songTitle-select" onChange={(event) => {setSong(data[event.target.value])}}>
-        <option value={null}>-- Select a song --</option>
-        {data && data.map((song, index) => (
-          <option key={song.title} value={index}>{`${song.title} - ${song.BPM}`}</option>
+        {data.map((song, index) => (
+          <option key={song.title} value={index}>{`${song.title}`}</option>
         ))}
 
       </select>
@@ -103,7 +103,7 @@ const Index = ({ dataEN, dataKR }) => {
         ))}
       </select>
 
-      <input type='button' disabled={!song} value='calculate' onClick={() => {setTargetBPM(song.BPM * songMod)}}></input>
+      <input type='button' disabled={!song} value='Set Target BPM' onClick={() => {setTargetBPM(song.BPM * songMod)}}></input>
 
       <br />
 
@@ -141,7 +141,7 @@ const Index = ({ dataEN, dataKR }) => {
 
       <hr />
 
-      {data && <ul>
+      <ul>
           {data.map(song => {
               const speedMod = calcSpeedmod(targetBPM, mode, song.BPM)
               const newBPM = speedMod * song.BPM;
@@ -157,14 +157,14 @@ const Index = ({ dataEN, dataKR }) => {
                   <br />
               </li>
           })}
-      </ul>}
+      </ul>
 
     </div>
   )
 }
 
 Index.getInitialProps = async ctx => {
-  //kicks off fetch requests simultaneously, effectively running them in parallel
+  //kick off the two fetch requests simultaneously, effectively running them in parallel
   const [ resEN, resKR ] = [await fetch('http://localhost:3000/api/songsEN'), await fetch('http://localhost:3000/api/songsKR')];
   const [ jsonEN, jsonKR ] = [await resEN.json(), await resKR.json()];
 
