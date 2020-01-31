@@ -1,5 +1,5 @@
 # Lost n' found
-A speed modifier calculator for DJMax Respect V. 
+A speed modifier calculator for [DJMax Respect V](https://store.steampowered.com/app/960170/DJMAX_RESPECT_V/). 
 
 Select a target bpm either manually or by selecting a song and modifier you were comfortable with. Then select a calculation mode to find your ideal speed mod for every song.
 
