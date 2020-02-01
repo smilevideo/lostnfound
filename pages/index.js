@@ -62,11 +62,11 @@ const Index = ({ songs }) => {
   const [song, setSong] = useState(songs.EN[0]);
   const [songMod, setSongMod] = useState(1.0);
   
-  let data = [];
-  data = songs[language];
+  let data = songs[language];
 
+  //fix song select dropdown when switching languages on a song that isn't in the other language
   if (!data.map(song => song.title).includes(song.title)) {
-    setSong(songs[language][0]);
+    setSong(songs[language][0]); 
   }
 
   return (
