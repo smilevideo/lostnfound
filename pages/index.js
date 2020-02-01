@@ -59,13 +59,24 @@ const Index = ({ dataEN, dataKR }) => {
   const [targetBPM, setTargetBPM] = useState(110);
   const [mode, setMode] = useState('nearest');
   const [language, setLanguage] = useState('EN');
+  const [song, setSong] = useState(dataEN[0]);
+  const [songMod, setSongMod] = useState(1.0);
   
   let data = [];
-  if (language === 'EN') data = dataEN;
-  else if (language === 'KR') data = dataKR;
+  if (language === 'EN') {
+    data = dataEN
 
-  const [song, setSong] = useState(data[0]);
-  const [songMod, setSongMod] = useState(1.0);
+    if (!data.map(song => song.title).includes(song.title)) {
+      setSong(dataEN[0]);
+    }
+  }
+  else if (language === 'KR') {
+    data = dataKR
+
+    if (!data.map(song => song.title).includes(song.title)) {
+      setSong(dataKR[0]);
+    }
+  }
 
   return (
     <div>
@@ -81,9 +92,14 @@ const Index = ({ dataEN, dataKR }) => {
         <option value='lowerLimit'>Lower Limit</option>
       </select>
       
-      <br />
+      <br /><br />
 
-      <select name="song" id="songTitle-select" onChange={(event) => {setSong(data[event.target.value])}}>
+      <select 
+        name="song" 
+        id="songTitle-select" 
+        onChange={(event) => {setSong(data[event.target.value])}}
+        value={data.map(song => song.title).indexOf(song.title)}
+      >
         {data.map((song, index) => (
           <option key={song.title} value={index}>{`${song.title}`}</option>
         ))}
@@ -97,7 +113,7 @@ const Index = ({ dataEN, dataKR }) => {
 
       <input type='button' disabled={!song} value='Set Target BPM' onClick={() => {setTargetBPM(song.BPM * songMod)}}></input>
 
-      <br />
+      <br /><br />
 
       <span>Target BPM: </span>
       <input 
@@ -108,28 +124,30 @@ const Index = ({ dataEN, dataKR }) => {
       />
       <br /><br />
       
-      <label className='form-radio'>
-          <input
-              type='radio'
-              name='language'
-              value='EN'
-              checked={language === 'EN'}
-              onChange={(event) => {setLanguage(event.target.value)}}
-              className='form-input-radio'
-          />
-          English
-      </label>
-      <label className='form-radio'>
-          <input
-              type='radio'
-              name='language'
-              value='KR'
-              checked={language === 'KR'}
-              onChange={(event) => {setLanguage(event.target.value)}}
-              className='form-input-radio'
-          />
-          Korean
-      </label>
+      <div className='language-select'>
+        <label className='form-radio'>
+            <input
+                type='radio'
+                name='language'
+                value='EN'
+                checked={language === 'EN'}
+                onChange={(event) => {setLanguage(event.target.value)}}
+                className='form-input-radio'
+            />
+            English
+        </label>
+        <label className='form-radio'>
+            <input
+                type='radio'
+                name='language'
+                value='KR'
+                checked={language === 'KR'}
+                onChange={(event) => {setLanguage(event.target.value)}}
+                className='form-input-radio'
+            />
+            Korean
+        </label>
+      </div>
 
       <hr />
 
