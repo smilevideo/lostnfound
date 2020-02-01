@@ -1,4 +1,5 @@
 body {
+    /* think font-family will only apply if bootstrap cdn fails */
     font-family: 'SF Pro Text', 'SF Pro Icons', system-ui;
     padding: 20px 20px 60px;
     margin: 0 auto;
@@ -12,6 +13,8 @@ body {
 
 .language-select {
     position: absolute;
+    border: 2px solid;
+    padding: 5px;
     top: 15px;
     right: 15px;
 }

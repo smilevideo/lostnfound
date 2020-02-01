@@ -140,25 +140,32 @@ const Index = ({ songs }) => {
         </label>
       </div>
 
-      <hr />
-
-      <ul>
+      <table className="table">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">BPM</th>
+            <th scope="col">Speed Modifier</th>
+            <th scope="col">New BPM</th>
+            <th scope="col">Difference</th>
+          </tr>
+        </thead>
+        <tbody>
           {data.map(song => {
-              const speedMod = calcSpeedmod(targetBPM, mode, song.BPM)
-              const newBPM = speedMod * song.BPM;
-              const difference = newBPM - targetBPM;
+            const speedMod = calcSpeedmod(targetBPM, mode, song.BPM)
+            const newBPM = speedMod * song.BPM;
+            const difference = newBPM - targetBPM;
 
-              return <li key={song.title}>
-                  <div><strong>{`${song.title}`}</strong></div>
-                  <div>{`BPM: ${song.BPM}`}</div> 
-                  
-                  <div>{`Speed Mod to use: ${speedMod}`}</div> 
-                  <div>{`New BPM: ${newBPM}`}</div>
-                  <div>{`Difference: ${Math.round(difference * 100) / 100}`}</div>
-                  <br />
-              </li>
+            return <tr>
+              <th scope='row'>{`${song.title}`}</th>
+              <td>{`${song.BPM}`}</td>
+              <td>{`${speedMod}`}</td>
+              <td>{`${newBPM}`}</td>
+              <td>{`${Math.round(difference * 100) / 100}`}</td>
+            </tr>
           })}
-      </ul>
+        </tbody>
+      </table>
 
       <a href='https://github.com/smilevideo/lostnfound'><img src='GitHub-Mark-32px.png' id='githubButton' /></a>
     </div>
