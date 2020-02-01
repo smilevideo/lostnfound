@@ -55,27 +55,18 @@ const calcSpeedmod = (targetBPM, mode, songBPM) => {
   }
 }
 
-const Index = ({ dataEN, dataKR }) => {
+const Index = ({ songs }) => {
   const [targetBPM, setTargetBPM] = useState(110);
   const [mode, setMode] = useState('nearest');
   const [language, setLanguage] = useState('EN');
-  const [song, setSong] = useState(dataEN[0]);
+  const [song, setSong] = useState(songs.EN[0]);
   const [songMod, setSongMod] = useState(1.0);
   
   let data = [];
-  if (language === 'EN') {
-    data = dataEN
+  data = songs[language];
 
-    if (!data.map(song => song.title).includes(song.title)) {
-      setSong(dataEN[0]);
-    }
-  }
-  else if (language === 'KR') {
-    data = dataKR
-
-    if (!data.map(song => song.title).includes(song.title)) {
-      setSong(dataKR[0]);
-    }
+  if (!data.map(song => song.title).includes(song.title)) {
+    setSong(songs[language][0]);
   }
 
   return (
@@ -181,8 +172,10 @@ Index.getInitialProps = async ctx => {
   const [ jsonEN, jsonKR ] = [await resEN.json(), await resKR.json()];
 
   return {
-    dataEN: jsonEN,
-    dataKR: jsonKR
+    songs: {
+      EN: jsonEN,
+      KR: jsonKR
+    }
   }
 }
 
