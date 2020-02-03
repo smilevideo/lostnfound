@@ -29,7 +29,7 @@ const calcSpeedmod = (targetBPM, mode, songBPM) => {
 	}
 	
 	//after the loop, speedmodList[end] will give the largest speed less than targetBPM
-	if (end < 0) { 
+	if (end < 0) {
 		return 0.5; //if the targetBPM is less than the minimum possible speed, return minimum speed 
 	}
 
@@ -162,7 +162,7 @@ const Index = ({ songs }) => {
 						const newBPM = speedMod * song.BPM;
 						const difference = newBPM - targetBPM;
 
-						return <tr>
+						return <tr key={`${song.title}`}>
 							<th scope='row'>{`${song.title}`}</th>
 							<td>{`${song.BPM}`}</td>
 							<td>{`${speedMod}`}</td>
