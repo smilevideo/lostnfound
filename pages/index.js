@@ -71,111 +71,122 @@ const Index = ({ songs }) => {
 	}
 
 	return (
-		<div>
+		<div className='app'>
 			<DocHead />
 			
-			<h1 className="title">Lost n' found</h1>
-			<h3 className='title-desc'>Speed modifier calculator for DJMax Respect V</h3>
+			<header>
+				<h1 className="title">Lost n' found</h1>
+				<h3 className='title-desc'>Speed modifier calculator for DJMax Respect V</h3>
+			</header>
 
-			<span>Calculation Mode: </span>
-			<select name="mode" id="mode-select" onChange={(event) => {setMode(event.target.value)}}>
-				<option value='nearest'>Nearest</option>
-				<option value='upperLimit'>Upper Limit</option>
-				<option value='lowerLimit'>Lower Limit</option>
-			</select>
-			
-			<br /><br />
+			<main>
+				<section>
+					<div className='language-radio'>
+						<label>
+							<input
+								type='radio'
+								name='language'
+								value='EN'
+								checked={language === 'EN'}
+								onChange={(event) => {setLanguage(event.target.value)}}
+								className='form-input-radio'
+							/>
+							English
+						</label>
 
-			<span>Song Played: </span>
-			<select 
-				name="song" 
-				id="songTitle-select" 
-				onChange={(event) => {setSong(data[event.target.value])}}
-				value={data.map(song => song.title).indexOf(song.title)}
-			>
-				{data.map((song, index) => (
-					<option key={song.title} value={index}>{`${song.title}`}</option>
-				))}
-			</select>
+						<label>
+							<input
+								type='radio'
+								name='language'
+								value='KR'
+								checked={language === 'KR'}
+								onChange={(event) => {setLanguage(event.target.value)}}
+								className='form-input-radio'
+							/>
+							Korean
+						</label>
+					</div>
 
-			<span>Speed Used: </span>
-			<select name="songMod" id="songMod-select" value={songMod} onChange={(event) => {setSongMod(event.target.value)}}>
-				{speedmodList.map(mod => (
-					<option key={mod} value={mod}>{mod}</option>
-				))}
-			</select>
+					<div className='songTitle-select'>
+						<span>Song Played: </span>
+						<select 
+							name="song"  
+							onChange={(event) => {setSong(data[event.target.value])}}
+							value={data.map(song => song.title).indexOf(song.title)}
+						>
+							{data.map((song, index) => (
+								<option key={song.title} value={index}>{`${song.title}`}</option>
+							))}
+						</select>
+					</div>
+					
+					<div className='songMod-select'>
+						<span>Speed Used: </span>
+						<select name="songMod" value={songMod} onChange={(event) => {setSongMod(event.target.value)}}>
+							{speedmodList.map(mod => (
+								<option key={mod} value={mod}>{mod}</option>
+							))}
+						</select>
+					</div>
 
-			<input type='button'  
-				value='Set Target BPM' 
-				onClick={() => {setTargetBPM(song.BPM * songMod)}}
-			></input>
+					<div className='calcTargetBPM-button'>
+						<input type='button' value='Set Target BPM' onClick={() => {setTargetBPM(song.BPM * songMod)}}></input>
+					</div>
 
-			<br /><br />
+					<div className='targetBPM-input'>
+						<span>Target BPM: </span>
+						<input 
+							type='number'
+							min='1'
+							value={targetBPM}
+							onChange={(event) => {setTargetBPM(event.target.value)}}
+						/>
+					</div>
+					
+					<div className='mode-select'>
+						<span>Calculation Mode: </span>
+						<select name="mode" id="mode-select" onChange={(event) => {setMode(event.target.value)}}>
+							<option value='nearest'>Nearest</option>
+							<option value='upperLimit'>Upper Limit</option>
+							<option value='lowerLimit'>Lower Limit</option>
+						</select>
+					</div>
+				</section>
 
-			<span>Target BPM: </span>
-			<input 
-				type='number'
-				min='1'
-				value={targetBPM}
-				onChange={(event) => {setTargetBPM(event.target.value)}}
-			/>
-			<br /><br />
-			
-			<div className='language-select'>
-				<label className='form-radio'>
-					<input
-						type='radio'
-						name='language'
-						value='EN'
-						checked={language === 'EN'}
-						onChange={(event) => {setLanguage(event.target.value)}}
-						className='form-input-radio'
-					/>
-					English
-				</label>
+				<section>
+					<table className="resultsTable">
+						<thead>
+							<tr>
+								<th scope="col">Title</th>
+								<th scope="col">BPM</th>
+								<th scope="col">Speed Modifier To Use</th>
+								<th scope="col">New BPM</th>
+								<th scope="col">Difference</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							{data.map(song => {
+								const speedMod = calcSpeedmod(targetBPM, mode, song.BPM)
+								const newBPM = speedMod * song.BPM;
+								const difference = newBPM - targetBPM;
 
-				<label className='form-radio'>
-					<input
-						type='radio'
-						name='language'
-						value='KR'
-						checked={language === 'KR'}
-						onChange={(event) => {setLanguage(event.target.value)}}
-						className='form-input-radio'
-					/>
-					Korean
-				</label>
-			</div>
+								return <tr key={`${song.title}`}>
+									<td>{`${song.title}`}</td>
+									<td>{`${song.BPM}`}</td>
+									<td>{`${speedMod}`}</td>
+									<td>{`${newBPM}`}</td>
+									<td>{`${Math.round(difference * 100) / 100}`}</td>
+								</tr>
+							})}
+						</tbody>
+					</table>
+				</section>
+			</main>
 
-			<table className="resultsTable">
-				<thead>
-					<tr>
-						<th scope="col">Title</th>
-						<th scope="col">BPM</th>
-						<th scope="col">Speed Modifier To Use</th>
-						<th scope="col">New BPM</th>
-						<th scope="col">Difference</th>
-					</tr>
-				</thead>
-				
-				<tbody>
-					{data.map(song => {
-						const speedMod = calcSpeedmod(targetBPM, mode, song.BPM)
-						const newBPM = speedMod * song.BPM;
-						const difference = newBPM - targetBPM;
-
-						return <tr key={`${song.title}`}>
-							<td>{`${song.title}`}</td>
-							<td>{`${song.BPM}`}</td>
-							<td>{`${speedMod}`}</td>
-							<td>{`${newBPM}`}</td>
-							<td>{`${Math.round(difference * 100) / 100}`}</td>
-						</tr>
-					})}
-				</tbody>
-			</table>
-
-			<a href='https://github.com/smilevideo/lostnfound'><img src='GitHub-Mark-32px.png' id='githubButton' /></a>
+			<footer>
+				<a href='https://github.com/smilevideo/lostnfound'><img src='GitHub-Mark-32px.png' id='githubButton' /></a>
+			</footer>
 		</div>
 	)
 }

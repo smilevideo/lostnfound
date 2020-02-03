@@ -1,27 +1,30 @@
-body {
+.app {
     /* think font-family will only apply if bootstrap cdn fails */
     font-family: 'SF Pro Text', 'SF Pro Icons', system-ui;
     padding: 20px 20px 60px;
     margin: 0 auto;
+    
+}   
+
+header {
+    color: rgb(34, 145, 12);
 }
 
 .title {
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: normal;
     margin: 0px;
     padding-bottom: 0px;
 }
 
 .title-desc {
     font-size: 20px;
+    font-weight: normal;
     padding-bottom: 10px;
 }
 
 .language-select {
-    position: absolute;
-    border: 2px solid;
-    padding: 5px;
-    top: 15px;
-    right: 15px;
+    margin-bottom: 10px;
 }
 
 #githubButton {
@@ -32,9 +35,17 @@ body {
     width: 25px;
 }
 
-.resultsTable          { overflow-y: auto; height: 100px; }
-.resultsTable thead tr th { position: sticky; top: 0; }
+.resultsTable {
+    overflow-y: auto; 
+    height: 100px; 
+}
+
+/* sticky table headers */
+.resultsTable thead tr th { 
+    position: sticky; 
+    top: 0; 
+}
 
 table  { border-collapse: collapse; width: 100%; }
 th, td { padding: 2px 8px; }
-th     { background:#eee; }
+th     { background:rgb(190, 242, 255); }
