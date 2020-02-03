@@ -10,21 +10,21 @@ request('https://djmaxdb.com/4B/', (error, response, html) => {
         const $ = cheerio.load(html);
 
         $('#DB_TABLE tr').each((i, el) => {
-           const row = $(el);
-           const title = row.find('td:nth-child(2)').text();
-           let bpm = row.find('td:nth-last-child(2)').text();
+            const row = $(el);
+            const title = row.find('td:nth-child(2)').text();
+            let bpm = row.find('td:nth-last-child(2)').text();
 
-           //use maximum bpm for songs with bpm changes
-           if (bpm.includes('~')) {
-               bpm = bpm.split('~')[1].trim();
-           } 
+            //use maximum bpm for songs with bpm changes
+            if (bpm.includes('~')) {
+                bpm = bpm.split('~')[1].trim();
+            } 
 
-           bpm = parseInt(bpm, 10);
+            bpm = parseInt(bpm, 10);
 
-           songs.push({
-               title: title,
-               BPM: bpm
-           });
+            songs.push({
+                title: title,
+                BPM: bpm
+            });
         });
 
         //sort songs by title alphabetically
