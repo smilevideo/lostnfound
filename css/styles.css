@@ -6,8 +6,13 @@ body {
 }
 
 .title {
-    font-size: 40px;
-    margin-top: 0px;
+    font-size: 35px;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+.title-desc {
+    font-size: 20px;
     padding-bottom: 10px;
 }
 
@@ -26,3 +31,10 @@ body {
     height: 25px;
     width: 25px;
 }
+
+.resultsTable          { overflow-y: auto; height: 100px; }
+.resultsTable thead tr th { position: sticky; top: 0; }
+
+table  { border-collapse: collapse; width: 100%; }
+th, td { padding: 2px 8px; }
+th     { background:#eee; }

@@ -75,9 +75,9 @@ const Index = ({ songs }) => {
 			<DocHead />
 			
 			<h1 className="title">Lost n' found</h1>
-			<h3 className='title-desc'>A speed modifier calculator for DJMax Respect V</h3>
+			<h3 className='title-desc'>Speed modifier calculator for DJMax Respect V</h3>
 
-			<label htmlFor="mode-select">Calculation Mode:</label>
+			<span>Calculation Mode: </span>
 			<select name="mode" id="mode-select" onChange={(event) => {setMode(event.target.value)}}>
 				<option value='nearest'>Nearest</option>
 				<option value='upperLimit'>Upper Limit</option>
@@ -86,6 +86,7 @@ const Index = ({ songs }) => {
 			
 			<br /><br />
 
+			<span>Song Played: </span>
 			<select 
 				name="song" 
 				id="songTitle-select" 
@@ -97,6 +98,7 @@ const Index = ({ songs }) => {
 				))}
 			</select>
 
+			<span>Speed Used: </span>
 			<select name="songMod" id="songMod-select" value={songMod} onChange={(event) => {setSongMod(event.target.value)}}>
 				{speedmodList.map(mod => (
 					<option key={mod} value={mod}>{mod}</option>
@@ -145,12 +147,12 @@ const Index = ({ songs }) => {
 				</label>
 			</div>
 
-			<table className="table">
+			<table className="resultsTable">
 				<thead>
 					<tr>
 						<th scope="col">Title</th>
 						<th scope="col">BPM</th>
-						<th scope="col">Speed Modifier</th>
+						<th scope="col">Speed Modifier To Use</th>
 						<th scope="col">New BPM</th>
 						<th scope="col">Difference</th>
 					</tr>
@@ -163,7 +165,7 @@ const Index = ({ songs }) => {
 						const difference = newBPM - targetBPM;
 
 						return <tr key={`${song.title}`}>
-							<th scope='row'>{`${song.title}`}</th>
+							<td>{`${song.title}`}</td>
 							<td>{`${song.BPM}`}</td>
 							<td>{`${speedMod}`}</td>
 							<td>{`${newBPM}`}</td>
