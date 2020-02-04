@@ -75,18 +75,38 @@ select, input {
 
 .targetBPM-input {
     margin-bottom: 18px;
-    color: rgb(0, 20, 255);
+    color: rgb(0, 52, 196);
 }
 
 input[type=number]{
     width: 50px;
-    color: rgb(0, 20, 255);
+    color: rgb(0, 52, 196);
 } 
+
+.toggleModeInfo {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    cursor: help;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.modeInfo {
+    padding: 0px 10px 0px 20px;
+    font-size: 15px;
+    margin-bottom: 0px;
+}
+
+.modeInfo li {
+    margin-bottom: 10px;
+}
 
 /* output table */
 .filter-input {
     margin-bottom: 10px;
-    
 }
 
 .resultsTable {

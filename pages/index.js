@@ -59,6 +59,7 @@ const calcSpeedmod = (targetBPM, mode, songBPM) => {
 const Index = ({ songs }) => {
 	const [targetBPM, setTargetBPM] = useState(110);
 	const [mode, setMode] = useState('nearest');
+	const [modeInfo, setModeInfo] = useState(false);
 	const [language, setLanguage] = useState('EN');
 	const [song, setSong] = useState(songs.EN[0]);
 	const [songMod, setSongMod] = useState(1.0);
@@ -146,12 +147,21 @@ const Index = ({ songs }) => {
 					</div>
 					
 					<div className='mode-select'>
-						<span>Calculation Mode: </span>
+						<span>Calculation Mode <button className='toggleModeInfo' onClick={()=>{
+							if (!modeInfo) setModeInfo(true);
+							else setModeInfo(false);
+						}}>(?)</button>: </span>
 						<select name="mode" id="mode-select" onChange={(event) => {setMode(event.target.value)}}>
 							<option value='nearest'>Nearest</option>
 							<option value='upperLimit'>Upper Limit</option>
 							<option value='lowerLimit'>Lower Limit</option>
 						</select>
+						{modeInfo && 
+						<ul className='modeInfo'>
+							<li><b>Nearest:</b> The speed that gives the closest BPM to your target BPM.</li>
+							<li><b>Upper Limit:</b> The speed that gives the largest BPM less than your target BPM.</li>
+							<li><b>Lower Limit:</b> The speed that gives the smallest BPM greater than your target BPM.</li>
+						</ul>}
 					</div>
 				</section>
 
