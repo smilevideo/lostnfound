@@ -80,57 +80,58 @@ const Index = ({ songs }) => {
 			</header>
 
 			<main>
-				<section>
+				<section className='inputs'>
+					<h3 className='input-header'>Inputs</h3>
 					<div className='language-radio'>
-						<label>
-							<input
-								type='radio'
-								name='language'
-								value='EN'
-								checked={language === 'EN'}
-								onChange={(event) => {setLanguage(event.target.value)}}
-								className='form-input-radio'
-							/>
-							English
-						</label>
-
-						<label>
-							<input
-								type='radio'
-								name='language'
-								value='KR'
-								checked={language === 'KR'}
-								onChange={(event) => {setLanguage(event.target.value)}}
-								className='form-input-radio'
-							/>
-							Korean
-						</label>
+						<input
+							type='radio'
+							id='language1'
+							name='language'
+							value='EN'
+							checked={language === 'EN'}
+							onChange={(event) => {setLanguage(event.target.value)}}
+							className='form-input-radio'
+						/>
+						<label htmlFor='language1'>English</label>
+						
+						<input
+							type='radio'
+							id='language2'
+							name='language'
+							value='KR'
+							checked={language === 'KR'}
+							onChange={(event) => {setLanguage(event.target.value)}}
+							className='form-input-radio'
+						/>
+						<label htmlFor='language2'>Korean</label>
 					</div>
 
-					<div className='songTitle-select'>
-						<span>Song Played: </span>
-						<select 
-							name="song"  
-							onChange={(event) => {setSong(data[event.target.value])}}
-							value={data.map(song => song.title).indexOf(song.title)}
-						>
-							{data.map((song, index) => (
-								<option key={song.title} value={index}>{`${song.title}`}</option>
-							))}
-						</select>
-					</div>
+					<div className='setTargetBPMBySong'>
+						<div className='songTitle-select'>
+							<span>Song Played: </span>
+							<select 
+								name="song"  
+								onChange={(event) => {setSong(data[event.target.value])}}
+								value={data.map(song => song.title).indexOf(song.title)}
+							>
+								{data.map((song, index) => (
+									<option key={song.title} value={index}>{`${song.title}`}</option>
+								))}
+							</select>
+						</div>
 					
-					<div className='songMod-select'>
-						<span>Speed Used: </span>
-						<select name="songMod" value={songMod} onChange={(event) => {setSongMod(event.target.value)}}>
-							{speedmodList.map(mod => (
-								<option key={mod} value={mod}>{mod}</option>
-							))}
-						</select>
-					</div>
+						<div className='songMod-select'>
+							<span>Speed Used: </span>
+							<select name="songMod" value={songMod} onChange={(event) => {setSongMod(event.target.value)}}>
+								{speedmodList.map(mod => (
+									<option key={mod} value={mod}>{mod}</option>
+								))}
+							</select>
+						</div>
 
-					<div className='calcTargetBPM-button'>
-						<input type='button' value='Set Target BPM' onClick={() => {setTargetBPM(song.BPM * songMod)}}></input>
+						<div className='calcTargetBPM-button'>
+							<input type='button' value='Set Target BPM' onClick={() => {setTargetBPM(song.BPM * songMod)}}></input>
+						</div>
 					</div>
 
 					<div className='targetBPM-input'>
@@ -157,9 +158,9 @@ const Index = ({ songs }) => {
 					<table className="resultsTable">
 						<thead>
 							<tr>
-								<th scope="col">Title</th>
+								<th scope="col">Song</th>
 								<th scope="col">BPM</th>
-								<th scope="col">Speed Modifier To Use</th>
+								<th scope="col">Speed</th>
 								<th scope="col">New BPM</th>
 								<th scope="col">Difference</th>
 							</tr>

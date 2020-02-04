@@ -1,0 +1,2 @@
+-table search box to only show songs including string
+-some kind of info box for the different calculation modes
