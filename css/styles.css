@@ -84,6 +84,11 @@ input[type=number]{
 } 
 
 /* output table */
+.filter-input {
+    margin-bottom: 10px;
+    
+}
+
 .resultsTable {
     overflow-y: auto; 
     height: 100px; 

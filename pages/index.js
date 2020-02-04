@@ -62,6 +62,7 @@ const Index = ({ songs }) => {
 	const [language, setLanguage] = useState('EN');
 	const [song, setSong] = useState(songs.EN[0]);
 	const [songMod, setSongMod] = useState(1.0);
+	const [filter, setFilter] = useState('');
 	
 	let data = songs[language];
 
@@ -155,6 +156,14 @@ const Index = ({ songs }) => {
 				</section>
 
 				<section>
+					<input 
+						type='text' 
+						className='filter-input'
+						value={filter}
+						placeholder='Search..'
+						onChange={(event) => {setFilter(event.target.value)}}
+					/>
+
 					<table className="resultsTable">
 						<thead>
 							<tr>
@@ -167,7 +176,8 @@ const Index = ({ songs }) => {
 						</thead>
 						
 						<tbody>
-							{data.map(song => {
+							{data.filter(song => song.title.toLowerCase().includes(filter.toLowerCase()))
+							.map(song => {
 								const speedMod = calcSpeedmod(targetBPM, mode, song.BPM)
 								const newBPM = speedMod * song.BPM;
 								const difference = newBPM - targetBPM;
