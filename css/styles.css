@@ -76,12 +76,12 @@ select, input {
 
 .targetBPM-input {
     margin-bottom: 18px;
-    color: rgb(0, 52, 196);
+    color: rgb(109, 93, 0);
 }
 
 input[type=number]{
-    width: 50px;
-    color: rgb(0, 52, 196);
+    width: 70px;
+    color: rgb(109, 93, 0);
 } 
 
 .mode-select {
