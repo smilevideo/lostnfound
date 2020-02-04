@@ -81,7 +81,6 @@ const Index = ({ songs }) => {
 				<h3 className='title-desc'>Speed modifier calculator for DJMax Respect V</h3>
 			</header>
 
-			<main>
 				<section className='inputs'>
 					<h3 className='input-header'>Inputs</h3>
 					<div className='language-radio'>
@@ -165,7 +164,7 @@ const Index = ({ songs }) => {
 					</div>
 				</section>
 
-				<section>
+				<section className='results'>
 					<input 
 						type='text' 
 						className='filter-input'
@@ -203,7 +202,6 @@ const Index = ({ songs }) => {
 						</tbody>
 					</table>
 				</section>
-			</main>
 
 			<footer>
 				<a href='https://github.com/smilevideo/lostnfound'><img src='GitHub-Mark-32px.png' id='githubButton' /></a>
