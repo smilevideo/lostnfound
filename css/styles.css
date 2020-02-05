@@ -194,7 +194,7 @@ tbody td:nth-child(3) {
     .app {
         display: grid;
         grid-template-columns: 400px 1fr;
-        grid-template-rows: 100px 350px 1fr;
+        grid-template-rows: 100px 427px 1fr;
     }
 
     header {
