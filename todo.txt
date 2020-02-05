@@ -1,0 +1,1 @@
+show warning when a target bpm is impossible to exceed or go under for a song

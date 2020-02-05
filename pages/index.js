@@ -76,10 +76,10 @@ const Index = ({ songs }) => {
 		let rgb = [0, 0, 0];
 		
 		if (difference > 0) {
-			rgb[0] = difference * 20;
+			rgb[0] = difference * 12;
 		}
 		else if (difference < 0) {
-			rgb[2] = -1 * difference * 20;
+			rgb[2] = -1 * difference * 12;
 		}
 
 		return { color: `rgb(${rgb})` };
