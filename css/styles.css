@@ -147,6 +147,10 @@ tbody td:nth-child(3) {
     text-align: right;
 }
 
+.song-image {
+    display: none;
+}
+
 @media (min-width: 500px) {
     thead tr th:nth-child(2) {
         display: table-cell;
@@ -190,7 +194,7 @@ tbody td:nth-child(3) {
     .app {
         display: grid;
         grid-template-columns: 400px 1fr;
-        grid-template-rows: 100px 1fr;
+        grid-template-rows: 100px 350px 1fr;
     }
 
     header {
@@ -211,7 +215,16 @@ tbody td:nth-child(3) {
 
     .results {
         grid-column: 2;
-        grid-row: 1 / 3;
+        grid-row: 1 / 4;
+    }
+
+    .song-image {
+        display: block;
+        position: sticky;
+        top: 540px;
+        grid-column: 1;
+        grid-row: 3;
+        height: 220px;
     }
 }
 
@@ -227,6 +240,11 @@ th {
 
 tr:nth-child(2n+2) {
     background: rgb(230, 230, 230);
+}
+
+/* image from song mv */
+.song-image {
+
 }
 
 /* footer: just a github button so far */

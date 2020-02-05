@@ -216,6 +216,8 @@ const Index = ({ songs }) => {
 				</table>
 			</section>
 
+			<img src='/bg.jpg' className='song-image' />
+
 			<footer>
 				<a href='https://github.com/smilevideo/lostnfound'><img src='GitHub-Mark-32px.png' id='githubButton' /></a>
 			</footer>
