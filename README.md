@@ -12,7 +12,7 @@ Demo deployed here: https://lostnfound.now.sh/
 (minimizes absolute value of difference)  
 
 - <strong>Upper Limit:</strong> The largest multiple that is less than your target bpm  
-(smallest negative difference)  
+(greatest negative difference)  
 
 - <strong>Lower Limit:</strong> The smallest multiple that is greater than your target bpm  
 (smallest positive difference)
