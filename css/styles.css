@@ -8,16 +8,12 @@
 
 
 /* header: title and title description */
-header {
-    color: rgb(34, 145, 12);
-}
-
 .title {
     font-size: 35px;
     font-weight: normal;
     margin-top: 0px;
     margin-bottom: 5px;
-    
+    color: rgb(34, 141, 12);
 }
 
 .title-desc {
@@ -25,6 +21,7 @@ header {
     font-weight: normal;
     margin-top: 0px;
     margin-bottom: 25px;
+    color: rgb(30, 129, 10);
 }
 
 

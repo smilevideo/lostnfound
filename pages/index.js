@@ -93,7 +93,7 @@ const Index = ({ songs }) => {
 			
 			<header>
 				<h1 className="title">Lost n' found</h1>
-				<h3 className='title-desc'>Speed modifier calculator for DJMax Respect V</h3>
+				<h2 className='title-desc'>Speed modifier calculator for DJMax Respect V</h2>
 			</header>
 
 			<section className='inputs'>
@@ -218,10 +218,12 @@ const Index = ({ songs }) => {
 				</table>
 			</section>
 
-			<img src='/bg.jpg' className='song-image' />
+			<img src='/bg.jpg' className='song-image' alt='' />
 
 			<footer>
-				<a href='https://github.com/smilevideo/lostnfound'><img src='GitHub-Mark-32px.png' id='githubButton' /></a>
+				<a href='https://github.com/smilevideo/lostnfound'>
+					<img src='GitHub-Mark-32px.png' id='githubButton' title={'Lost n\' found\'s GitHub repo'} alt={'Link to Lost n\' found\'s GitHub repository'} />
+				</a>
 			</footer>
 		</div>
 	)
