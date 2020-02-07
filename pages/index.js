@@ -3,6 +3,8 @@ import fetch from 'isomorphic-unfetch';
 
 import DocHead from '../components/docHead';
 
+const API_URL = 'http://localhost:3000/api';
+
 const Index = ({ songs }) => {
 	const [targetBPM, setTargetBPM] = useState(110);
 	const [mode, setMode] = useState('nearest');
@@ -227,7 +229,7 @@ const Index = ({ songs }) => {
 
 Index.getInitialProps = async ctx => {
 	//kick off the two fetch requests simultaneously, effectively running them in parallel
-	const [ resEN, resKR ] = [await fetch('http://localhost:3000/api/songsEN'), await fetch('http://localhost:3000/api/songsKR')];
+	const [ resEN, resKR ] = [await fetch(`${API_URL}/songsEN`), await fetch(`${API_URL}/songsKR`)];
 	const [ jsonEN, jsonKR ] = [await resEN.json(), await resKR.json()];
 
 	return {
