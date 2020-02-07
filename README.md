@@ -8,7 +8,7 @@ Supports both English and Korean songlists.
 Demo deployed here: https://lostnfound.now.sh/
 
 ## Calculation Modes
-- <strong>Nearest:</strong> The closest multiple to your target bpm  
+- <strong>Nearest:</strong> Default mode. The closest multiple to your target bpm  
 (minimizes absolute value of difference)  
 
 - <strong>Upper Limit:</strong> The largest multiple that is less than your target bpm  
