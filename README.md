@@ -18,7 +18,7 @@ Demo deployed here: https://lostnfound.now.sh/
 (smallest positive difference)
 
 ## Songs with BPM Changes
-For songs with variable BPM, the app uses the maximum bpm in calculations. Those songs and their BPM ranges are listed below:
+For songs with variable BPM, __the app uses the maximum bpm__ in calculations. Those songs and their BPM ranges are listed below:
 - Fentanest: 20~160
 - KILLER BEE: 116~155
 - Negative Nature: 125~145
