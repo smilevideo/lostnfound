@@ -8,17 +8,17 @@ Supports both English and Korean songlists.
 Demo deployed here: https://lostnfound.now.sh/
 
 ## Calculation Modes
-- <strong>Nearest:</strong> The closest multiple to your target bpm  
+- <strong>Nearest:</strong> Default mode. The closest multiple to your target bpm  
 (minimizes absolute value of difference)  
 
 - <strong>Upper Limit:</strong> The largest multiple that is less than your target bpm  
-(smallest negative difference)  
+(greatest nonpositive difference)  
 
 - <strong>Lower Limit:</strong> The smallest multiple that is greater than your target bpm  
-(smallest positive difference)
+(smallest nonnegative difference)
 
 ## Songs with BPM Changes
-For songs with variable BPM, the app uses the maximum bpm in calculations. Those songs and their BPM ranges are listed below:
+For songs with variable BPM, __the app uses the maximum bpm__ in calculations. Those songs and their BPM ranges are listed below:
 - Fentanest: 20~160
 - KILLER BEE: 116~155
 - Negative Nature: 125~145
