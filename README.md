@@ -12,10 +12,10 @@ Demo deployed here: https://lostnfound.now.sh/
 (minimizes absolute value of difference)  
 
 - <strong>Upper Limit:</strong> The largest multiple that is less than your target bpm  
-(greatest negative difference)  
+(greatest nonpositive difference)  
 
 - <strong>Lower Limit:</strong> The smallest multiple that is greater than your target bpm  
-(smallest positive difference)
+(smallest nonnegative difference)
 
 ## Songs with BPM Changes
 For songs with variable BPM, __the app uses the maximum bpm__ in calculations. Those songs and their BPM ranges are listed below:
