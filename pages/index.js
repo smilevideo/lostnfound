@@ -74,17 +74,18 @@ const Index = ({ songs }) => {
 		}
 	}
 
-	const calcDifferenceRGBStyle = (difference) => {
-		let rgb = [0, 0, 0];
-		
+	const differenceTd = (difference) => {
 		if (difference > 0) {
-			rgb[0] = difference * 10;
-		}
-		else if (difference < 0) {
-			rgb[2] = -1 * difference * 10;
+			return <td style={{ color: `rgb(${[difference * 10, 0, 0]})` }}>
+				{`+${Math.round(difference * 100) / 100}`}
+			</td>
 		}
 
-		return { color: `rgb(${rgb})` };
+		else if (difference <= 0) {
+			return <td style={{ color: `rgb(${[0, 0, difference * -10]})` }}>
+				{`${Math.round(difference * 100) / 100}`}
+			</td>
+		}
 	}
 
 	return (
@@ -211,7 +212,7 @@ const Index = ({ songs }) => {
 								<td>{`${song.BPM}`}</td>
 								<td>{`${speedMod}`}</td>
 								<td>{`${newBPM}`}</td>
-								<td style={calcDifferenceRGBStyle(difference)}>{`${Math.round(difference * 100) / 100}`}</td>
+								{differenceTd(difference)}
 							</tr>
 						})}
 					</tbody>

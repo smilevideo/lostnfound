@@ -1,0 +1,4 @@
+-prepend a plus sign to positive differences
+-better align some inputs in the input section 
+-move filter inside the song name table header -- but then where would I put the github button
+-(possibly) figure out what this dude https://gall.dcinside.com/board/view/?id=ez2djmax&no=97101&page=1 is asking for and do it
