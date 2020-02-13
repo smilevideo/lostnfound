@@ -5,6 +5,75 @@ import DocHead from '../components/docHead';
 
 const API_URL = 'http://localhost:3000/api';
 
+// possible speed mods in Respect V go from 0.5 to 5.0, in increments of 0.25
+const speedmodList = [];
+for (let i = 0.5; i <= 5; i += 0.25) {
+	speedmodList.push(i);
+}
+
+const calcSpeedmod = (targetBPM, mode, songBPM) => {
+	//binary search for the largest speed mod that gives a bpm less than the target BPM
+	let start = 0;
+	let end = speedmodList.length - 1;
+
+	while (start <= end) {
+		let mid = Math.floor((start + end) / 2);
+
+		if (songBPM * speedmodList[mid] > targetBPM) {
+			end = mid - 1;
+		}
+		else if (songBPM * speedmodList[mid] < targetBPM) {
+			start = mid + 1;
+		}
+		else {
+			return speedmodList[mid]; //perfect match applies to all 3 modes
+		}
+	}
+	
+	//after the loop, speedmodList[end] will give the largest speed less than targetBPM
+	if (end < 0) {
+		return 0.5; //if the targetBPM is less than the minimum possible speed, return minimum speed 
+	}
+
+	if (mode === 'nearest') {
+		const diff = Math.abs((speedmodList[end] * songBPM) - targetBPM);
+
+		if (Math.abs((speedmodList[end + 1] * songBPM) - targetBPM) < diff) {
+			return speedmodList[end + 1];
+		}
+		else {
+			return speedmodList[end];
+		}
+	}
+	else if (mode === 'upperLimit') {
+		return speedmodList[end];
+	}
+	else if (mode === 'lowerLimit') {
+		if (end === speedmodList.length - 1) {
+			return speedmodList[end]; //speedmodList[end + 1] doesn't exist if the targetBPM is greater than the maximum multiple
+		}
+		else {
+			return speedmodList[end + 1];
+		}
+	}
+}
+
+const differenceTd = (difference) => {
+	if (difference > 0) {
+		return <td style={{ color: `rgb(${[difference * 10, 0, 0]})` }}>
+			{`+${Math.round(difference * 100) / 100}`}
+		</td>
+	}
+	else if (difference < 0) {
+		return <td style={{ color: `rgb(${[0, 0, difference * -10]})` }}>
+			{`${Math.round(difference * 100) / 100}`}
+		</td>
+	}
+	else {
+		return <td>0</td>
+	}
+}
+
 const Index = ({ songs }) => {
 	const [targetBPM, setTargetBPM] = useState(110);
 	const [mode, setMode] = useState('nearest');
@@ -19,77 +88,6 @@ const Index = ({ songs }) => {
 	//fix song select dropdown when switching languages on a song that isn't in the other language
 	if (!data.map(song => song.title).includes(song.title)) {
 		setSong(songs[language][0]); 
-	}
-
-	// possible speed mods in Respect V go from 0.5 to 5.0, in increments of 0.25
-	const speedmodList = [];
-	for (let i = 0.5; i <= 5; i += 0.25) {
-		speedmodList.push(i);
-	}
-
-	const calcSpeedmod = (targetBPM, mode, songBPM) => {
-		//binary search for the largest speed mod that gives a bpm less than the target BPM
-		let start = 0;
-		let end = speedmodList.length - 1;
-
-		while (start <= end) {
-			let mid = Math.floor((start + end) / 2);
-
-			if (songBPM * speedmodList[mid] > targetBPM) {
-				end = mid - 1;
-			}
-			else if (songBPM * speedmodList[mid] < targetBPM) {
-				start = mid + 1;
-			}
-			else {
-				return speedmodList[mid]; //perfect match applies to all 3 modes
-			}
-		}
-		
-		//after the loop, speedmodList[end] will give the largest speed less than targetBPM
-		if (end < 0) {
-			return 0.5; //if the targetBPM is less than the minimum possible speed, return minimum speed 
-		}
-
-		if (mode === 'nearest') {
-			const diff = Math.abs((speedmodList[end] * songBPM) - targetBPM);
-
-			if (Math.abs((speedmodList[end + 1] * songBPM) - targetBPM) < diff) {
-				return speedmodList[end + 1];
-			}
-			else {
-				return speedmodList[end];
-			}
-		}
-		else if (mode === 'upperLimit') {
-			return speedmodList[end];
-		}
-		else if (mode === 'lowerLimit') {
-			if (end === speedmodList.length - 1) {
-				return speedmodList[end]; //speedmodList[end + 1] doesn't exist if the targetBPM is greater than the maximum multiple
-			}
-			else {
-				return speedmodList[end + 1];
-			}
-		}
-	}
-
-	const differenceTd = (difference) => {
-		if (difference > 0) {
-			return <td style={{ color: `rgb(${[difference * 10, 0, 0]})` }}>
-				{`+${Math.round(difference * 100) / 100}`}
-			</td>
-		}
-
-		else if (difference < 0) {
-			return <td style={{ color: `rgb(${[0, 0, difference * -10]})` }}>
-				{`-${Math.round(difference * -100) / 100}`}
-			</td>
-		}
-
-		else {
-			return <td>0</td>
-		}
 	}
 
 	return (
