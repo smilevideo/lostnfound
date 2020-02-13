@@ -81,10 +81,14 @@ const Index = ({ songs }) => {
 			</td>
 		}
 
-		else if (difference <= 0) {
+		else if (difference < 0) {
 			return <td style={{ color: `rgb(${[0, 0, difference * -10]})` }}>
-				{`${Math.round(difference * 100) / 100}`}
+				{`-${Math.round(difference * -100) / 100}`}
 			</td>
+		}
+
+		else {
+			return <td>0</td>
 		}
 	}
 
