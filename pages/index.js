@@ -126,8 +126,10 @@ const Index = ({ songs }) => {
 				</div>
 
 				<div className='setTargetBPMBySong'>
-					<div className='songTitle-select'>
+					<div className='songTitleInput-text'>
 						<span>Song Played: </span>
+					</div>
+					<div className='songTitleInput-select'>
 						<select 
 							name="song"  
 							onChange={(event) => {setSong(data[event.target.value])}}
@@ -139,8 +141,10 @@ const Index = ({ songs }) => {
 						</select>
 					</div>
 				
-					<div className='songMod-select'>
+					<div className='songModInput-text'>
 						<span>Speed Used: </span>
+					</div>
+					<div className='songModInput-select'>
 						<select name="songMod" value={songMod} onChange={(event) => {setSongMod(event.target.value)}}>
 							{speedmodList.map(mod => (
 								<option key={mod} value={mod}>{mod}</option>
