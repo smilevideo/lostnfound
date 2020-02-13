@@ -140,7 +140,7 @@ const Index = ({ songs }) => {
 							))}
 						</select>
 					</div>
-				
+
 					<div className='songModInput-text'>
 						<span>Speed Used: </span>
 					</div>
