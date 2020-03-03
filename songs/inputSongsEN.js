@@ -44,7 +44,7 @@ const addSong = () => {
             })
 
             let songsJSON = JSON.stringify(songs, null, 2);
-            fs.writeFileSync('./songsEN.json', songsJSON)
+            fs.writeFileSync('./songsEN.json', songsJSON);
             rl.close(); 
         }
     })
