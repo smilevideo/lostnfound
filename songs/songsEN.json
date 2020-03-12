@@ -50,6 +50,10 @@
     "BPM": 183
   },
   {
+    "title": "Attack",
+    "BPM": 150
+  },
+  {
     "title": "Beautiful Day",
     "artist": "ND Lee",
     "BPM": 83
@@ -63,6 +67,10 @@
     "title": "Binary World",
     "artist": "Tsukasa",
     "BPM": 182
+  },
+  {
+    "title": "BLACK GOLD",
+    "BPM": 155
   },
   {
     "title": "BlackCat",
@@ -160,6 +168,10 @@
     "BPM": 151
   },
   {
+    "title": "Do it",
+    "BPM": 129
+  },
+  {
     "title": "Don't Die",
     "artist": "Paul Bazooka",
     "BPM": 175
@@ -168,6 +180,10 @@
     "title": "Dreadnought",
     "artist": "EarBreaker",
     "BPM": 140
+  },
+  {
+    "title": "Dream it",
+    "BPM": 175
   },
   {
     "title": "Dream of You",
@@ -215,6 +231,10 @@
     "BPM": 142
   },
   {
+    "title": "Fancy Night",
+    "BPM": 122
+  },
+  {
     "title": "Far East Princess",
     "artist": "Nauts",
     "BPM": 102
@@ -238,6 +258,10 @@
     "title": "Fever GJ",
     "artist": "xxdbxx",
     "BPM": 98
+  },
+  {
+    "title": "FIGHT NIGHT (feat. Calyae)",
+    "BPM": 190
   },
   {
     "title": "Fly Away",
@@ -340,6 +364,10 @@
     "BPM": 144
   },
   {
+    "title": "Kensei",
+    "BPM": 170
+  },
+  {
     "title": "KILLER BEE",
     "artist": "GOTH",
     "BPM": 155
@@ -395,6 +423,10 @@
     "BPM": 162
   },
   {
+    "title": "Lisrim",
+    "BPM": 172
+  },
+  {
     "title": "Long Vacation",
     "artist": "ESTi",
     "BPM": 138
@@ -405,9 +437,21 @@
     "BPM": 165
   },
   {
+    "title": "Lost Serenity",
+    "BPM": 162
+  },
+  {
+    "title": "Lost Temple",
+    "BPM": 104
+  },
+  {
     "title": "Luv Flow",
     "artist": "3rd Coast",
     "BPM": 115
+  },
+  {
+    "title": "Maharajah -fenomeno edition-",
+    "BPM": 120
   },
   {
     "title": "MASAI",
@@ -450,6 +494,14 @@
     "BPM": 147
   },
   {
+    "title": "Misty Er'A",
+    "BPM": 120
+  },
+  {
+    "title": "Move Yourself",
+    "BPM": 125
+  },
+  {
     "title": "Mulch",
     "artist": "Sampling Masters MEGA",
     "BPM": 200
@@ -458,6 +510,10 @@
     "title": "My Alias",
     "artist": "Dayz",
     "BPM": 110
+  },
+  {
+    "title": "NANAIRO",
+    "BPM": 150
   },
   {
     "title": "NANO RISK",
@@ -493,6 +549,10 @@
     "title": "NEON 1989 (ESTi Remix)",
     "artist": "OREO",
     "BPM": 120
+  },
+  {
+    "title": "Never Die",
+    "BPM": 172
   },
   {
     "title": "Never Say",
@@ -593,6 +653,10 @@
     "title": "Remains Of Doom",
     "artist": "NieN",
     "BPM": 124
+  },
+  {
+    "title": "Remember Me",
+    "BPM": 180
   },
   {
     "title": "REVENGE",
@@ -705,6 +769,10 @@
     "BPM": 142
   },
   {
+    "title": "Space Challenger",
+    "BPM": 170
+  },
+  {
     "title": "Space of Soul",
     "artist": "M2U",
     "BPM": 160
@@ -800,6 +868,10 @@
     "BPM": 124
   },
   {
+    "title": "Vile Requiem",
+    "BPM": 150
+  },
+  {
     "title": "Void",
     "artist": "Kobayashi Tetsuya",
     "BPM": 127
@@ -825,6 +897,10 @@
     "BPM": 180
   },
   {
+    "title": "welcome to the space (feat. Jisun)",
+    "BPM": 135
+  },
+  {
     "title": "WhiteBlue",
     "artist": "zts",
     "BPM": 144
@@ -833,6 +909,10 @@
     "title": "WHY",
     "artist": "Nauts",
     "BPM": 84
+  },
+  {
+    "title": "WONDER $LOT 777",
+    "BPM": 155
   },
   {
     "title": "Ya! Party!",
