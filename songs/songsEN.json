@@ -10,6 +10,10 @@
     "BPM": 100
   },
   {
+    "title": "A Lie ~Deep Inside Mix~",
+    "BPM": 110
+  },
+  {
     "title": "A. I",
     "artist": "Forte Escape",
     "BPM": 138
@@ -73,6 +77,10 @@
     "BPM": 155
   },
   {
+    "title": "Black MInD",
+    "BPM": 192
+  },
+  {
     "title": "BlackCat",
     "artist": "BEXTER",
     "BPM": 130
@@ -123,6 +131,10 @@
     "BPM": 120
   },
   {
+    "title": "Bye Bye Love ~Nu Jazz Mix~",
+    "BPM": 130
+  },
+  {
     "title": "Can We Talk",
     "artist": "Forte Escape",
     "BPM": 125
@@ -131,6 +143,10 @@
     "title": "Catch Me",
     "artist": "Forte Escape",
     "BPM": 145
+  },
+  {
+    "title": "Catch You",
+    "BPM": 180
   },
   {
     "title": "Chain of Gravity",
@@ -274,6 +290,10 @@
     "BPM": 116
   },
   {
+    "title": "For Seasons ~Air Guitar Mix~",
+    "BPM": 116
+  },
+  {
     "title": "For the IKARUS",
     "artist": "NieN",
     "BPM": 154
@@ -309,6 +329,10 @@
     "BPM": 112
   },
   {
+    "title": "Get Out ~Hip Noodle Mix~",
+    "BPM": 123
+  },
+  {
     "title": "Ghost Voices",
     "artist": "Virtual Self",
     "BPM": 120
@@ -324,6 +348,18 @@
     "BPM": 136
   },
   {
+    "title": "Good Night, Bad Luck",
+    "BPM": 142.5
+  },
+  {
+    "title": "Got more raves?",
+    "BPM": 133
+  },
+  {
+    "title": "Groove Prayer",
+    "BPM": 190
+  },
+  {
     "title": "Groovin Up",
     "artist": "Mycin.T",
     "BPM": 120
@@ -332,6 +368,10 @@
     "title": "HAMSIN",
     "artist": "makou",
     "BPM": 150
+  },
+  {
+    "title": "HB-axeleration",
+    "BPM": 158
   },
   {
     "title": "HeartBeat",
@@ -454,6 +494,10 @@
     "BPM": 120
   },
   {
+    "title": "Marry me, Nightmare",
+    "BPM": 142
+  },
+  {
     "title": "MASAI",
     "artist": "Croove",
     "BPM": 128
@@ -469,6 +513,10 @@
     "BPM": 130
   },
   {
+    "title": "Memory of Wind",
+    "BPM": 110
+  },
+  {
     "title": "Mess it Up",
     "artist": "Nauts",
     "BPM": 140
@@ -482,6 +530,10 @@
     "title": "Miles",
     "artist": "Electronic Boutique",
     "BPM": 130
+  },
+  {
+    "title": "Mind Control",
+    "BPM": 185
   },
   {
     "title": "Minimal Life",
@@ -512,6 +564,10 @@
     "BPM": 110
   },
   {
+    "title": "My Jealousy",
+    "BPM": 130
+  },
+  {
     "title": "NANAIRO",
     "BPM": 150
   },
@@ -519,6 +575,10 @@
     "title": "NANO RISK",
     "artist": "Dayz",
     "BPM": 176
+  },
+  {
+    "title": "NB Girls",
+    "BPM": 162
   },
   {
     "title": "NB POWER",
@@ -560,6 +620,10 @@
     "BPM": 90
   },
   {
+    "title": "Nevermind",
+    "BPM": 142
+  },
+  {
     "title": "Nightmare",
     "artist": "M2U",
     "BPM": 190
@@ -595,9 +659,17 @@
     "BPM": 140
   },
   {
+    "title": "ouroboros -twin stroke of the end-",
+    "BPM": 188
+  },
+  {
     "title": "Out Law",
     "artist": "Croove",
     "BPM": 126
+  },
+  {
+    "title": "OVER THE NIGHT",
+    "BPM": 175
   },
   {
     "title": "Over Your Dream",
@@ -714,6 +786,10 @@
     "BPM": 177
   },
   {
+    "title": "Satisfaction",
+    "BPM": 195
+  },
+  {
     "title": "Save My Dream",
     "artist": "Forte Escape",
     "BPM": 125
@@ -764,9 +840,17 @@
     "BPM": 130
   },
   {
+    "title": "sO mUCH iN LUV ~Melodic Twisted Mix~",
+    "BPM": 122
+  },
+  {
     "title": "Soar ~Stay With Me~",
     "artist": "Mycin.T",
     "BPM": 142
+  },
+  {
+    "title": "Someday",
+    "BPM": 136
   },
   {
     "title": "Space Challenger",
@@ -798,6 +882,14 @@
     "BPM": 140
   },
   {
+    "title": "STOP",
+    "BPM": 162
+  },
+  {
+    "title": "Streetlight",
+    "BPM": 115
+  },
+  {
     "title": "Sunny Side",
     "artist": "Croove",
     "BPM": 112
@@ -823,9 +915,17 @@
     "BPM": 135
   },
   {
+    "title": "Syriana ~Blast Wave Mix~",
+    "BPM": 135
+  },
+  {
     "title": "Taekwonburi",
     "artist": "xxdbxx",
     "BPM": 162
+  },
+  {
+    "title": "Talk! Talk!",
+    "BPM": 143
   },
   {
     "title": "Temptation",
@@ -848,6 +948,10 @@
     "BPM": 186
   },
   {
+    "title": "The One",
+    "BPM": 125
+  },
+  {
     "title": "Tok! Tok! Tok!",
     "artist": "STARTRACK",
     "BPM": 178
@@ -866,6 +970,10 @@
     "title": "Urban Night",
     "artist": "Electronic Boutique",
     "BPM": 124
+  },
+  {
+    "title": "Ventilator",
+    "BPM": 145
   },
   {
     "title": "Vile Requiem",
@@ -890,6 +998,10 @@
     "title": "Waiting for you",
     "artist": "Mycin.T",
     "BPM": 175
+  },
+  {
+    "title": "Warrior",
+    "BPM": 170
   },
   {
     "title": "We're All Gonna Die",
@@ -930,6 +1042,10 @@
     "BPM": 135
   },
   {
+    "title": "Yo Creo Que Si ~Live House Version~",
+    "BPM": 136
+  },
+  {
     "title": "Yo! Max!",
     "artist": "ND Lee",
     "BPM": 90
@@ -938,5 +1054,13 @@
     "title": "Your Own Miracle",
     "artist": "Ruby Tuesday",
     "BPM": 136
+  },
+  {
+    "title": "Your Own Miracle ~Disco House Mix~",
+    "BPM": 130
+  },
+  {
+    "title": "ZET",
+    "BPM": 125
   }
 ]

@@ -39,7 +39,7 @@ request('https://djmaxdb.com/4B/', (error, response, html) => {
 
         //write to file songsKR.json
         let songsJSON = JSON.stringify(songs, null, 2);
-        fs.writeFileSync('./songsKR.json', songsJSON)
+        fs.writeFileSync('../songsKR.json', songsJSON)
     }
 });
 

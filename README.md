@@ -25,6 +25,8 @@ For songs with variable BPM, __the app uses the maximum bpm__ in calculations. T
 - Royal Clown: 143~164
 - Misty Er'A: 66~120
 - Vile Requiem: 75~150
+- STOP: 90~162
+- Marry me, Nightmare: 114~142
 
 ---
 
@@ -36,7 +38,9 @@ English song information manually entered with [this Node script](https://github
 Korean song information scraped from [DJMAXDB](https://djmaxdb.com/4B/) with [this Node script](https://github.com/smilevideo/lostnfound/blob/master/songs/scrapeSongsKR.js).  
 
 --- 
-### Updates - <span style="color: orange">Up-to-date as of 3/12/20</span>
+### Updates - <span style="color: orange">Up-to-date through 4/14/20</span>
+- (4/10/20) - Added the songs from the 4/14 DLCs "DJMAX TRILOGY PACK" and "GROOVE COASTER PACK"
+
 - (3/12/20) - Added the 20 songs from the 3/12 DLC "V Extension Pack"
 
 - (3/3/20) - Added the 8 songs from the 3/12 DLC "Emotional Sense Pack"

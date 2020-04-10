@@ -8,6 +8,10 @@
     "BPM": 210
   },
   {
+    "title": "바람의 기억",
+    "BPM": 110
+  },
+  {
     "title": "비상 ~Stay With Me~",
     "BPM": 142
   },
@@ -34,6 +38,10 @@
   {
     "title": "A Lie",
     "BPM": 100
+  },
+  {
+    "title": "A Lie ~Deep Inside Mix~",
+    "BPM": 110
   },
   {
     "title": "A.I",
@@ -80,6 +88,10 @@
     "BPM": 155
   },
   {
+    "title": "Black MInD",
+    "BPM": 192
+  },
+  {
     "title": "BlackCat",
     "BPM": 130
   },
@@ -120,12 +132,20 @@
     "BPM": 120
   },
   {
+    "title": "Bye Bye Love ~Nu Jazz Mix~",
+    "BPM": 130
+  },
+  {
     "title": "Can We Talk",
     "BPM": 125
   },
   {
     "title": "Catch Me",
     "BPM": 145
+  },
+  {
+    "title": "Catch You",
+    "BPM": 180
   },
   {
     "title": "Chain of Gravity",
@@ -240,6 +260,10 @@
     "BPM": 116
   },
   {
+    "title": "For Seasons ~Air Guitar Mix~",
+    "BPM": 116
+  },
+  {
     "title": "For the IKARUS",
     "BPM": 154
   },
@@ -268,6 +292,10 @@
     "BPM": 112
   },
   {
+    "title": "Get Out ~Hip Noodle Mix~",
+    "BPM": 123
+  },
+  {
     "title": "Ghost Voices",
     "BPM": 120
   },
@@ -280,12 +308,28 @@
     "BPM": 136
   },
   {
+    "title": "Good Night, Bad Luck",
+    "BPM": 142.5
+  },
+  {
+    "title": "Got more raves?",
+    "BPM": 133
+  },
+  {
+    "title": "Groove Prayer",
+    "BPM": 190
+  },
+  {
     "title": "Groovin Up",
     "BPM": 120
   },
   {
     "title": "HAMSIN",
     "BPM": 150
+  },
+  {
+    "title": "HB-axeleration",
+    "BPM": 158
   },
   {
     "title": "Heavenly",
@@ -384,6 +428,10 @@
     "BPM": 120
   },
   {
+    "title": "Marry me, Nightmare",
+    "BPM": 142
+  },
+  {
     "title": "MASAI",
     "BPM": 128
   },
@@ -406,6 +454,10 @@
   {
     "title": "Miles",
     "BPM": 130
+  },
+  {
+    "title": "Mind Control",
+    "BPM": 185
   },
   {
     "title": "Minimal Life",
@@ -432,12 +484,20 @@
     "BPM": 110
   },
   {
+    "title": "My Jealousy",
+    "BPM": 130
+  },
+  {
     "title": "NANAIRO",
     "BPM": 150
   },
   {
     "title": "NANO RISK",
     "BPM": 176
+  },
+  {
+    "title": "NB Girls",
+    "BPM": 162
   },
   {
     "title": "NB POWER",
@@ -472,6 +532,10 @@
     "BPM": 90
   },
   {
+    "title": "Nevermind",
+    "BPM": 142
+  },
+  {
     "title": "Nightmare",
     "BPM": 190
   },
@@ -500,8 +564,16 @@
     "BPM": 140
   },
   {
+    "title": "ouroboros -twin stroke of the end-",
+    "BPM": 188
+  },
+  {
     "title": "Out Law",
     "BPM": 126
+  },
+  {
+    "title": "OVER THE NIGHT",
+    "BPM": 175
   },
   {
     "title": "Over Your Dream",
@@ -592,6 +664,10 @@
     "BPM": 177
   },
   {
+    "title": "Satisfaction",
+    "BPM": 195
+  },
+  {
     "title": "Save My Dream",
     "BPM": 125
   },
@@ -632,6 +708,14 @@
     "BPM": 130
   },
   {
+    "title": "sO mUCH iN LUV ~Melodic Twisted Mix~",
+    "BPM": 122
+  },
+  {
+    "title": "Someday",
+    "BPM": 136
+  },
+  {
     "title": "Space Challenger",
     "BPM": 170
   },
@@ -656,6 +740,14 @@
     "BPM": 140
   },
   {
+    "title": "STOP",
+    "BPM": 162
+  },
+  {
+    "title": "Streetlight",
+    "BPM": 115
+  },
+  {
     "title": "Sunny Side",
     "BPM": 112
   },
@@ -676,6 +768,14 @@
     "BPM": 135
   },
   {
+    "title": "Syriana ~Blast Wave Mix~",
+    "BPM": 135
+  },
+  {
+    "title": "Talk! Talk!",
+    "BPM": 143
+  },
+  {
     "title": "Temptation",
     "BPM": 136
   },
@@ -690,6 +790,10 @@
   {
     "title": "The Obliterator",
     "BPM": 186
+  },
+  {
+    "title": "The One",
+    "BPM": 125
   },
   {
     "title": "Tok! Tok! Tok!",
@@ -708,8 +812,8 @@
     "BPM": 124
   },
   {
-    "title": "voldenuit",
-    "BPM": 105
+    "title": "Ventilator",
+    "BPM": 145
   },
   {
     "title": "Vile Requiem",
@@ -720,12 +824,20 @@
     "BPM": 127
   },
   {
+    "title": "voldenuit",
+    "BPM": 105
+  },
+  {
     "title": "waiting for me",
     "BPM": 150
   },
   {
     "title": "Waiting for you",
     "BPM": 175
+  },
+  {
+    "title": "Warrior",
+    "BPM": 170
   },
   {
     "title": "We're All Gonna Die",
@@ -760,11 +872,23 @@
     "BPM": 135
   },
   {
+    "title": "Yo Creo Que Si ~Live House Version~",
+    "BPM": 136
+  },
+  {
     "title": "Yo! Max!",
     "BPM": 90
   },
   {
     "title": "Your Own Miracle",
     "BPM": 136
+  },
+  {
+    "title": "Your Own Miracle ~Disco House Mix~",
+    "BPM": 130
+  },
+  {
+    "title": "ZET",
+    "BPM": 125
   }
 ]

@@ -1,8 +1,9 @@
 //this script is used to sort the korean songlist JSON after directly adding songs to the JSON manually
+    //for the EN version, you can just run inputSongsEN without adding any songs for the same effect
 
 const fs = require('fs');
 
-let songs = JSON.parse(fs.readFileSync('./songsKR.json'));
+let songs = JSON.parse(fs.readFileSync('../songsKR.json'));
 
 songs.sort((a, b) => {
     const titleA = a.title.toLowerCase();
@@ -14,4 +15,4 @@ songs.sort((a, b) => {
 })
 
 let songsJSON = JSON.stringify(songs, null, 2);
-fs.writeFileSync('./songsKR.json', songsJSON);
+fs.writeFileSync('../songsKR.json', songsJSON);
