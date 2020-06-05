@@ -38,9 +38,10 @@ English song information manually entered with [this Node script](https://github
 Korean song information scraped from [DJMAXDB](https://djmaxdb.com/4B/) with [this Node script](https://github.com/smilevideo/lostnfound/blob/master/songs/scrapeSongsKR.js).  
 
 --- 
-### Updates - <span style="color:red"><em>currently missing Guilty Gear Collaboration tracks</em></span>
+### Updates - <span style="color:red"><em>Up-to-date as of 6/5/20</em></span>
 
-- (6/5/20) -  Added the 5/28 DLCs "CLAZZIQUAI EDITION PACK" and "BLACK SQUARE PACK" -thanks changho147
+- (6/5/20) - Added the 5/21 free update "Guilty Gear Collaboration"
+- (6/5/20) - Added the 5/28 DLCs "CLAZZIQUAI EDITION PACK" and "BLACK SQUARE PACK" -thanks changho147
 
 - (4/10/20) - Added the 4/14 DLCs "DJMAX TRILOGY PACK" and "GROOVE COASTER PACK"
 
