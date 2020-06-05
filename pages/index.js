@@ -213,11 +213,11 @@ const Index = ({ songs }) => {
 							const newBPM = speedMod * song.BPM;
 							const difference = newBPM - targetBPM;
 
-							return <tr key={`${song.title}`}>
-								<td>{`${song.title}`}</td>
-								<td>{`${song.BPM}`}</td>
-								<td>{`${speedMod}`}</td>
-								<td>{`${newBPM}`}</td>
+							return <tr key={song.title}>
+								<td>{song.title}</td>
+								<td>{song.BPM}</td>
+								<td>{speedMod}</td>
+								<td>{newBPM}</td>
 								{differenceTd(difference)}
 							</tr>
 						})}
@@ -225,11 +225,11 @@ const Index = ({ songs }) => {
 				</table>
 			</section>
 
-			<img src='/bg.jpg' className='song-image' alt='' />
+			<img src='/banner.jpg' className='song-image' alt='banner' />
 
 			<footer>
 				<a href='https://github.com/smilevideo/lostnfound'>
-					<img src='GitHub-Mark-32px.png' id='githubButton' title={'Lost n\' found\'s GitHub repo'} alt={'Link to Lost n\' found\'s GitHub repository'} />
+					<img src='GitHub-Mark-32px.png' id='githubButton' title="Lost n' found's GitHub repo" alt="Link to Lost n' found's GitHub repository" />
 				</a>
 			</footer>
 		</div>

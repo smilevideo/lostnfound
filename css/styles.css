@@ -292,11 +292,6 @@ tr:nth-child(2n+2) {
     background: rgb(230, 230, 230);
 }
 
-/* image from song mv */
-.song-image {
-
-}
-
 /* footer: just a github button so far */
 #githubButton {
     position: absolute;
