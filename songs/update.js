@@ -1,5 +1,6 @@
 // staging DLC song objects to add to the JSONs
 // 4/14: Trilogy and Groove Coaster DLCs
+// 6/06: Clazziquai and Black Square DLCs
 
 const EN = 
 [
@@ -127,6 +128,186 @@ const EN =
         "title": "Warrior",
         "BPM": 170
     },
+    {
+        "title": "Closer",
+        "BPM": 120
+    },
+    {
+        "title": "Coastal Tempo",
+        "BPM": 135
+    },
+    {
+        "title": "Color",
+        "BPM": 120
+    },
+    {
+        "title": "Come to me",
+        "BPM": 125
+    },
+    {
+        "title": "Creator",
+        "BPM": 117
+    },
+    {
+        "title": "DARK ENVY",
+        "BPM": 195
+    },
+    {
+        "title": "Electronics",
+        "BPM": 128
+    },
+    {
+        "title": "Fate",
+        "BPM": 110
+    },
+    {
+        "title": "First Kiss",
+        "BPM": 107
+    },
+    {
+        "title": "Flea",
+        "BPM": 126
+    },
+    {
+        "title": "Forever",
+        "BPM": 114
+    },
+    {
+        "title": "Freedom",
+        "BPM": 126
+    },
+    {
+        "title": "Here in the Moment",
+        "BPM": 115
+    },
+    {
+        "title": "In My Heart",
+        "BPM": 123
+    },
+    {
+        "title": "Love Mode",
+        "BPM": 120
+    },
+    {
+        "title": "Lover (CE Style)",
+        "BPM": 145
+    },
+    {
+        "title": "Proposed, Flower, Wolf",
+        "BPM": 80
+    },
+    {
+        "title": "Tell Me",
+        "BPM": 89
+    },
+    {
+        "title": "The Clear Blue Sky",
+        "BPM": 178
+    },
+    {
+        "title": "The Night Stage",
+        "BPM": 120
+    },
+    {
+        "title": "To You",
+        "BPM": 133
+    },
+    {
+        "title": "Urban Night",
+        "BPM": 93
+    },
+    {
+        "title": "Y (CE Style)",
+        "BPM": 130
+    },
+    {
+        "title": "Beat U Down",
+        "BPM": 155
+    },
+    {
+        "title": "Colours of Sorrow",
+        "BPM": 143
+    },
+    {
+        "title": "Cypher Gate",
+        "BPM": 150
+    },
+    {
+        "title": "Desperado",
+        "BPM": 130
+    },
+    {
+        "title": "Fermion",
+        "BPM": 156
+    },
+    {
+        "title": "Fever Pitch Girl",
+        "BPM": 136
+    },
+    {
+        "title": "Get Down",
+        "BPM": 111
+    },
+    {
+        "title": "Grave Consequence",
+        "BPM": 180
+    },
+    {
+        "title": "Heart of Witch",
+        "BPM": 170
+    },
+    {
+        "title": "In my Dream",
+        "BPM": 140
+    },
+    {
+        "title": "Jealousy",
+        "BPM": 125
+    },
+    {
+        "title": "Keys to the World",
+        "BPM": 160
+    },
+    {
+        "title": "Lovely hands",
+        "BPM": 132
+    },
+    {
+        "title": "Lover (BS Style)",
+        "BPM": 145
+    },
+    {
+        "title": "PDM",
+        "BPM": 120
+    },
+    {
+        "title": "Proposed, Flower, Wolf part.2",
+        "BPM": 160
+    },
+    {
+        "title": "Ready Now",
+        "BPM": 135
+    },
+    {
+        "title": "Ruti'n",
+        "BPM": 120
+    },
+    {
+        "title": "Secret World",
+        "BPM": 110
+    },
+    {
+        "title": "Y (BS Style)",
+        "BPM": 130
+    },
+    {
+        "title": "ANALYS",
+        "BPM": 170
+    },
+    {
+        "title": "Rising The Sonic",
+        "BPM": 137
+    }
 ]
 
 const KR = 
@@ -255,4 +436,184 @@ const KR =
         "title": "Warrior",
         "BPM": 170
     },
+    {
+        "title": "Closer",
+        "BPM": 120
+    },
+    {
+        "title": "Coastal Tempo",
+        "BPM": 135
+    },
+    {
+        "title": "Color",
+        "BPM": 120
+    },
+    {
+        "title": "내게로 와",
+        "BPM": 125
+    },
+    {
+        "title": "Creator",
+        "BPM": 117
+    },
+    {
+        "title": "DARK ENVY",
+        "BPM": 195
+    },
+    {
+        "title": "Electronics",
+        "BPM": 128
+    },
+    {
+        "title": "Fate",
+        "BPM": 110
+    },
+    {
+        "title": "First Kiss",
+        "BPM": 107
+    },
+    {
+        "title": "Flea",
+        "BPM": 126
+    },
+    {
+        "title": "영원",
+        "BPM": 114
+    },
+    {
+        "title": "Freedom",
+        "BPM": 126
+    },
+    {
+        "title": "Here in the Moment",
+        "BPM": 115
+    },
+    {
+        "title": "In My Heart",
+        "BPM": 123
+    },
+    {
+        "title": "Love Mode",
+        "BPM": 120
+    },
+    {
+        "title": "Lover (CE Style)",
+        "BPM": 145
+    },
+    {
+        "title": "고백, 꽃, 늑대",
+        "BPM": 80
+    },
+    {
+        "title": "Tell Me",
+        "BPM": 89
+    },
+    {
+        "title": "The Clear Blue Sky",
+        "BPM": 178
+    },
+    {
+        "title": "The Night Stage",
+        "BPM": 120
+    },
+    {
+        "title": "너에게",
+        "BPM": 133
+    },
+    {
+        "title": "Urban Night",
+        "BPM": 93
+    },
+    {
+        "title": "Y (CE Style)",
+        "BPM": 130
+    },
+    {
+        "title": "Beat U Down",
+        "BPM": 155
+    },
+    {
+        "title": "Colours of Sorrow",
+        "BPM": 143
+    },
+    {
+        "title": "Cypher Gate",
+        "BPM": 150
+    },
+    {
+        "title": "Desperado",
+        "BPM": 130
+    },
+    {
+        "title": "Fermion",
+        "BPM": 156
+    },
+    {
+        "title": "Fever Pitch Girl",
+        "BPM": 136
+    },
+    {
+        "title": "Get Down",
+        "BPM": 111
+    },
+    {
+        "title": "Grave Consequence",
+        "BPM": 180
+    },
+    {
+        "title": "Heart of Witch",
+        "BPM": 170
+    },
+    {
+        "title": "In my Dream",
+        "BPM": 140
+    },
+    {
+        "title": "Jealousy",
+        "BPM": 125
+    },
+    {
+        "title": "Keys to the World",
+        "BPM": 160
+    },
+    {
+        "title": "Lovely hands",
+        "BPM": 132
+    },
+    {
+        "title": "Lover (BS Style)",
+        "BPM": 145
+    },
+    {
+        "title": "PDM",
+        "BPM": 120
+    },
+    {
+        "title": "고백, 꽃, 늑대 part.2",
+        "BPM": 160
+    },
+    {
+        "title": "Ready Now",
+        "BPM": 135
+    },
+    {
+        "title": "Ruti'n",
+        "BPM": 120
+    },
+    {
+        "title": "Secret World",
+        "BPM": 110
+    },
+    {
+        "title": "Y (BS Style)",
+        "BPM": 130
+    },
+    {
+        "title": "ANALYS",
+        "BPM": 170
+    },
+    {
+        "title": "Rising The Sonic",
+        "BPM": 137
+    }
 ]

@@ -1,5 +1,21 @@
 [
   {
+    "title": "고백, 꽃, 늑대",
+    "BPM": 80
+  },
+  {
+    "title": "고백, 꽃, 늑대 part.2",
+    "BPM": 160
+  },
+  {
+    "title": "내게로 와",
+    "BPM": 125
+  },
+  {
+    "title": "너에게",
+    "BPM": 133
+  },
+  {
     "title": "바람에게 부탁해",
     "BPM": 108
   },
@@ -22,6 +38,10 @@
   {
     "title": "아침형 인간",
     "BPM": 150
+  },
+  {
+    "title": "영원",
+    "BPM": 114
   },
   {
     "title": "태권부리",
@@ -56,6 +76,10 @@
     "BPM": 135
   },
   {
+    "title": "ANALYS",
+    "BPM": 170
+  },
+  {
     "title": "Another DAY",
     "BPM": 142
   },
@@ -70,6 +94,10 @@
   {
     "title": "Attack",
     "BPM": 150
+  },
+  {
+    "title": "Beat U Down",
+    "BPM": 155
   },
   {
     "title": "Beautiful Day",
@@ -164,12 +192,44 @@
     "BPM": 178
   },
   {
+    "title": "Closer",
+    "BPM": 120
+  },
+  {
     "title": "CnP",
     "BPM": 127
   },
   {
+    "title": "Coastal Tempo",
+    "BPM": 135
+  },
+  {
+    "title": "Color",
+    "BPM": 120
+  },
+  {
+    "title": "Colours of Sorrow",
+    "BPM": 143
+  },
+  {
     "title": "Cosmic Elevator",
     "BPM": 164
+  },
+  {
+    "title": "Creator",
+    "BPM": 117
+  },
+  {
+    "title": "Cypher Gate",
+    "BPM": 150
+  },
+  {
+    "title": "DARK ENVY",
+    "BPM": 195
+  },
+  {
+    "title": "Desperado",
+    "BPM": 130
   },
   {
     "title": "DIVINE SERVICE",
@@ -198,6 +258,10 @@
   {
     "title": "Elastic STAR",
     "BPM": 132
+  },
+  {
+    "title": "Electronics",
+    "BPM": 128
   },
   {
     "title": "End of the Moonlight",
@@ -232,6 +296,10 @@
     "BPM": 102
   },
   {
+    "title": "Fate",
+    "BPM": 110
+  },
+  {
     "title": "FEAR",
     "BPM": 182
   },
@@ -244,12 +312,28 @@
     "BPM": 160
   },
   {
+    "title": "Fermion",
+    "BPM": 156
+  },
+  {
     "title": "Fever GJ",
     "BPM": 98
   },
   {
+    "title": "Fever Pitch Girl",
+    "BPM": 136
+  },
+  {
     "title": "FIGHT NIGHT (feat. Calyae)",
     "BPM": 190
+  },
+  {
+    "title": "First Kiss",
+    "BPM": 107
+  },
+  {
+    "title": "Flea",
+    "BPM": 126
   },
   {
     "title": "Fly Away",
@@ -268,6 +352,10 @@
     "BPM": 154
   },
   {
+    "title": "Freedom",
+    "BPM": 126
+  },
+  {
     "title": "FTR",
     "BPM": 140
   },
@@ -278,6 +366,10 @@
   {
     "title": "Futurism",
     "BPM": 142
+  },
+  {
+    "title": "Get Down",
+    "BPM": 111
   },
   {
     "title": "Get Jinxed",
@@ -316,6 +408,10 @@
     "BPM": 133
   },
   {
+    "title": "Grave Consequence",
+    "BPM": 180
+  },
+  {
     "title": "Groove Prayer",
     "BPM": 190
   },
@@ -332,6 +428,10 @@
     "BPM": 158
   },
   {
+    "title": "Heart of Witch",
+    "BPM": 170
+  },
+  {
     "title": "Heavenly",
     "BPM": 125
   },
@@ -340,12 +440,28 @@
     "BPM": 141
   },
   {
+    "title": "Here in the Moment",
+    "BPM": 115
+  },
+  {
     "title": "Higher",
     "BPM": 137
   },
   {
+    "title": "In my Dream",
+    "BPM": 140
+  },
+  {
+    "title": "In My Heart",
+    "BPM": 123
+  },
+  {
     "title": "JBG",
     "BPM": 102
+  },
+  {
+    "title": "Jealousy",
+    "BPM": 125
   },
   {
     "title": "Jupiter Driving",
@@ -354,6 +470,10 @@
   {
     "title": "Kensei",
     "BPM": 170
+  },
+  {
+    "title": "Keys to the World",
+    "BPM": 160
   },
   {
     "title": "KILLER BEE",
@@ -418,6 +538,22 @@
   {
     "title": "Lost Temple",
     "BPM": 104
+  },
+  {
+    "title": "Love Mode",
+    "BPM": 120
+  },
+  {
+    "title": "Lovely hands",
+    "BPM": 132
+  },
+  {
+    "title": "Lover (BS Style)",
+    "BPM": 145
+  },
+  {
+    "title": "Lover (CE Style)",
+    "BPM": 145
   },
   {
     "title": "Luv Flow",
@@ -584,6 +720,10 @@
     "BPM": 160
   },
   {
+    "title": "PDM",
+    "BPM": 120
+  },
+  {
     "title": "Phantom of Sky",
     "BPM": 115
   },
@@ -602,6 +742,10 @@
   {
     "title": "Ray of Illuminati",
     "BPM": 150
+  },
+  {
+    "title": "Ready Now",
+    "BPM": 135
   },
   {
     "title": "Real Over Drive",
@@ -626,6 +770,10 @@
   {
     "title": "Right Now",
     "BPM": 90
+  },
+  {
+    "title": "Rising The Sonic",
+    "BPM": 137
   },
   {
     "title": "Road Of Death",
@@ -656,6 +804,10 @@
     "BPM": 170
   },
   {
+    "title": "Ruti'n",
+    "BPM": 120
+  },
+  {
     "title": "Ruti'n (GOTH Wild Electro Remix)",
     "BPM": 112
   },
@@ -674,6 +826,10 @@
   {
     "title": "Secret Dejavu",
     "BPM": 160
+  },
+  {
+    "title": "Secret World",
+    "BPM": 110
   },
   {
     "title": "Seeker",
@@ -776,8 +932,16 @@
     "BPM": 143
   },
   {
+    "title": "Tell Me",
+    "BPM": 89
+  },
+  {
     "title": "Temptation",
     "BPM": 136
+  },
+  {
+    "title": "The Clear Blue Sky",
+    "BPM": 178
   },
   {
     "title": "The Feelings",
@@ -786,6 +950,10 @@
   {
     "title": "The Lost Story",
     "BPM": 70
+  },
+  {
+    "title": "The Night Stage",
+    "BPM": 120
   },
   {
     "title": "The Obliterator",
@@ -810,6 +978,10 @@
   {
     "title": "Urban Night",
     "BPM": 124
+  },
+  {
+    "title": "Urban Night (CLAZZIQUAI DLC)",
+    "BPM": 93
   },
   {
     "title": "Ventilator",
@@ -858,6 +1030,14 @@
   {
     "title": "WONDER $LOT 777",
     "BPM": 155
+  },
+  {
+    "title": "Y (BS Style)",
+    "BPM": 130
+  },
+  {
+    "title": "Y (CE Style)",
+    "BPM": 130
   },
   {
     "title": "Ya! Party!",
