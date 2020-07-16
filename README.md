@@ -23,7 +23,7 @@ For songs with variable BPM, __the app uses the maximum bpm__ in calculations. T
 ---
 
 ### Development Notes
-#### <span style="color:red">Up-to-date with DLC as of 7/16/20</span>
+#### Up-to-date with DLC as of 7/16/20
 Built with Next.js/React  
 
 For initial songlist (pre-any DLC),
