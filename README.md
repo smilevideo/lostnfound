@@ -27,6 +27,8 @@ For songs with variable BPM, __the app uses the maximum bpm__ in calculations. T
 - Vile Requiem: 75~150
 - STOP: 90~162
 - Marry me, Nightmare: 114~142
+- CODE NAME : ZERO: 185~200
+- Les Parfums de L'Amour: 138~240
 
 ---
 
