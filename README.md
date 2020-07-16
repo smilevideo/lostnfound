@@ -38,14 +38,4 @@ English song information was manually entered with [this Node script](https://gi
 Korean song information was scraped from [DJMAXDB](https://djmaxdb.com/4B/) with [this Node script](https://github.com/smilevideo/lostnfound/blob/master/songs/scripts/scrapeSongsKR.js).
 
 --- 
-### Updates - <span style="color:red"><em>Up-to-date as of 6/5/20</em></span>
-
-- (6/5/20) - Added the 5/28 DLCs "CLAZZIQUAI EDITION PACK" and "BLACK SQUARE PACK" -thanks changho147
-
-- (6/5/20) - Added the 5/21 free update "Guilty Gear Collaboration"
-
-- (4/10/20) - Added the 4/14 DLCs "DJMAX TRILOGY PACK" and "GROOVE COASTER PACK"
-
-- (3/12/20) - Added the 3/12 DLC "V Extension Pack"
-
-- (3/3/20) - Added the 3/12 DLC "Emotional Sense Pack"
+### <span style="color:red"><em>Up-to-date as of 7/16/20</em></span>
