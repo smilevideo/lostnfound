@@ -38,4 +38,4 @@ English song information was manually entered with [this Node script](https://gi
 Korean song information was scraped from [DJMAXDB](https://djmaxdb.com/4B/) with [this Node script](https://github.com/smilevideo/lostnfound/blob/master/songs/scripts/scrapeSongsKR.js).
 
 --- 
-### <span style="color:red"><em>Up-to-date as of 7/16/20</em></span>
+### <span style="color:red">Up-to-date with DLC as of 7/16/20</span>
