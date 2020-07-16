@@ -217,7 +217,7 @@ const Index = ({ songs }) => {
 								<td>{song.title}</td>
 								<td>{song.BPM}</td>
 								<td>{speedMod}</td>
-								<td>{newBPM}</td>
+								<td>{Math.round(newBPM * 100) / 100}</td>
 								{differenceTd(difference)}
 							</tr>
 						})}
