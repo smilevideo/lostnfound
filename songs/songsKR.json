@@ -52,6 +52,10 @@
     "BPM": 157
   },
   {
+    "title": "혜성",
+    "BPM": 109
+  },
+  {
     "title": "2Nite",
     "BPM": 110
   },
@@ -80,6 +84,14 @@
     "BPM": 170
   },
   {
+    "title": "Angelic Sphere",
+    "BPM": 143
+  },
+  {
+    "title": "ANiMA",
+    "BPM": 183.5
+  },
+  {
     "title": "Another DAY",
     "BPM": 142
   },
@@ -94,6 +106,10 @@
   {
     "title": "Attack",
     "BPM": 150
+  },
+  {
+    "title": "AXION",
+    "BPM": 160
   },
   {
     "title": "Beat U Down",
@@ -184,6 +200,10 @@
     "BPM": 155
   },
   {
+    "title": "Chemical Slave",
+    "BPM": 150
+  },
+  {
     "title": "Cherokee",
     "BPM": 136
   },
@@ -208,12 +228,20 @@
     "BPM": 135
   },
   {
+    "title": "CODE NAME : ZERO",
+    "BPM": 200
+  },
+  {
     "title": "Color",
     "BPM": 120
   },
   {
     "title": "Colours of Sorrow",
     "BPM": 143
+  },
+  {
+    "title": "conflict",
+    "BPM": 160
   },
   {
     "title": "Cosmic Elevator",
@@ -252,6 +280,10 @@
     "BPM": 140
   },
   {
+    "title": "Dream",
+    "BPM": 150
+  },
+  {
     "title": "Dream it",
     "BPM": 175
   },
@@ -268,6 +300,10 @@
     "BPM": 128
   },
   {
+    "title": "Ember",
+    "BPM": 145.12
+  },
+  {
     "title": "End of the Moonlight",
     "BPM": 155
   },
@@ -278,6 +314,10 @@
   {
     "title": "Enter The Universe",
     "BPM": 162
+  },
+  {
+    "title": "Entrance",
+    "BPM": 180
   },
   {
     "title": "Eternal Memory ~소녀의 꿈~",
@@ -504,12 +544,24 @@
     "BPM": 145
   },
   {
+    "title": "L",
+    "BPM": 155
+  },
+  {
     "title": "Ladymade Star",
     "BPM": 136
   },
   {
+    "title": "Legacy",
+    "BPM": 120
+  },
+  {
     "title": "Lemonade",
     "BPM": 195
+  },
+  {
+    "title": "Les Parfums de L'Amour",
+    "BPM": 240
   },
   {
     "title": "Let's Go Baby",
@@ -568,8 +620,16 @@
     "BPM": 115
   },
   {
+    "title": "Magnolia",
+    "BPM": 160
+  },
+  {
     "title": "Maharajah -fenomeno edition-",
     "BPM": 120
+  },
+  {
+    "title": "Mammal",
+    "BPM": 190
   },
   {
     "title": "Marionette",
@@ -636,6 +696,10 @@
     "BPM": 130
   },
   {
+    "title": "Myosotis",
+    "BPM": 160
+  },
+  {
     "title": "NANAIRO",
     "BPM": 150
   },
@@ -688,12 +752,20 @@
     "BPM": 190
   },
   {
+    "title": "Nine point eight",
+    "BPM": 164
+  },
+  {
     "title": "OBLIVION",
     "BPM": 141
   },
   {
     "title": "OBLIVION ~Rockin' Night Style~",
     "BPM": 141
+  },
+  {
+    "title": "Old Gold",
+    "BPM": 155
   },
   {
     "title": "ON",
@@ -800,6 +872,10 @@
     "BPM": 135
   },
   {
+    "title": "RockSTAR",
+    "BPM": 126
+  },
+  {
     "title": "Rolling On the Duck",
     "BPM": 180
   },
@@ -828,6 +904,10 @@
     "BPM": 177
   },
   {
+    "title": "Sairai",
+    "BPM": 95
+  },
+  {
     "title": "Satisfaction",
     "BPM": 195
   },
@@ -850,6 +930,10 @@
   {
     "title": "Shadow Flower",
     "BPM": 142
+  },
+  {
+    "title": "Shoot out",
+    "BPM": 140
   },
   {
     "title": "Showtime",
@@ -988,6 +1072,10 @@
     "BPM": 129
   },
   {
+    "title": "Undo",
+    "BPM": 141
+  },
+  {
     "title": "Urban Night",
     "BPM": 124
   },
@@ -996,8 +1084,16 @@
     "BPM": 93
   },
   {
+    "title": "Utopiosphere",
+    "BPM": 176
+  },
+  {
     "title": "Ventilator",
     "BPM": 145
+  },
+  {
+    "title": "Ververg",
+    "BPM": 190
   },
   {
     "title": "Vile Requiem",
@@ -1022,6 +1118,10 @@
   {
     "title": "Warrior",
     "BPM": 170
+  },
+  {
+    "title": "Watch Your Step",
+    "BPM": 130
   },
   {
     "title": "We're All Gonna Die",
@@ -1078,6 +1178,10 @@
   {
     "title": "Your Own Miracle ~Disco House Mix~",
     "BPM": 130
+  },
+  {
+    "title": "YUBIKIRI-GENMAN",
+    "BPM": 146
   },
   {
     "title": "ZET",
