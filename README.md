@@ -22,11 +22,12 @@ For songs with variable BPM, __the app uses the maximum bpm__ in calculations. T
 
 ---
 
-## Development Notes
+### Development Notes
+#### <span style="color:red">Up-to-date with DLC as of 7/16/20</span>
 Built with Next.js/React  
 
 For initial songlist (pre-any DLC),
 English song information was manually entered with [this Node script](https://github.com/smilevideo/lostnfound/blob/master/songs/scripts/inputSongsEN.js) because the lists I saw elsewhere either didn't have BPMs or didn't have full parity with Respect V.
 Korean song information was scraped from [DJMAXDB](https://djmaxdb.com/4B/) with [this Node script](https://github.com/smilevideo/lostnfound/blob/master/songs/scripts/scrapeSongsKR.js).
 
-### <span style="color:red">Up-to-date with DLC as of 7/16/20</span>
+
