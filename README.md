@@ -19,6 +19,7 @@ Demo deployed here: https://lostnfound.now.sh/
 
 ## Songs with BPM Changes
 For songs with variable BPM, __the app uses the maximum bpm__ in calculations.
+
 ---
 
 ### Development Notes
