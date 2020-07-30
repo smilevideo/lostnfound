@@ -1,7 +1,7 @@
 # Lost n' found
 A speed modifier calculator for [DJMax Respect V](https://store.steampowered.com/app/960170/DJMAX_RESPECT_V/). Somewhat mobile-friendly.
 
-<b>Unfortunately, no longer necessary since an update revamped the speed system, but i'll keep it up anyway. Maybe the project can be updated for other games that still use the old bpm=scroll speed system.</b>
+<b>~~Unfortunately~~ Fortunately, no longer necessary since an update revamped the speed system, but i'll keep it up anyway. Maybe the project can be updated for other games that still use the old bpm=scroll speed system.</b>
 
 Select a target bpm either manually or by selecting a song and modifier you were comfortable with to find your ideal speed mod for every song. You can also select from three calculation modes, explained further below.
 
